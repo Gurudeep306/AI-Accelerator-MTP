@@ -39,7 +39,7 @@ A robot's camera detector has to answer before the next decision is due, be accu
 ### Rahul Dewangan: accelerator specification and MPC controller
 - Wrote the accelerator specification: 4×4 output-stationary mesh, INT8/INT4 lanes, 32-word layer descriptor, register map, telemetry counters and implementation phases.
 - Built a **model-predictive controller** with three strategies (history-based, frame-preview and within-frame), receding horizon **H = 5** with **beam-search** pruning.
-- Generated workload traces from **YOLOv8n on nuScenes** camera frames and evaluated the controllers in a discrete-event **replay harness**: **0 deadline misses** at a 33 ms deadline on the real-YOLO replay.
+- Generated workload traces from **YOLOv8n on nuScenes** camera frames and evaluated the controllers in a discrete-event **replay harness** at a 33 ms deadline: no deadline misses at quality floors 0.85 and 0.70, and 2 of 80 frames missed by the within-frame controller at 0.45.
 
 ### MD Javid: supervisory controller and safety filter
 - Built a closed-loop simulation comparing a **fixed setting** with an explainable **six-rule controller**.
