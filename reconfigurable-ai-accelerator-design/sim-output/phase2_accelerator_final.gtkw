@@ -1,0 +1,213 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sat Nov 21 05:47:10 2026
+[*]
+[dumpfile] "phase2_accelerator_core.vcd"
+[dumpfile_mtime] "Sat Nov 21 04:06:22 2026"
+[dumpfile_size] 86119
+[savefile] "phase2_accelerator_final.gtkw"
+[timestart] 550000
+[size] 1333 600
+[pos] -1 29
+*-17.288609 656000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] tb_phase2_accelerator_core_v2.
+[treeopen] tb_phase2_accelerator_core_v2.dut.
+[treeopen] tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].
+[treeopen] tb_phase2_accelerator_core_v2.dut.postproc_inst.
+[treeopen] tb_phase2_accelerator_core_v2.dut.postproc_inst.PP_R[0].
+[sst_width] 255
+[signals_width] 251
+[sst_expanded] 1
+[sst_vpaned_height] 159
+@200
+-CLOCK AND RESET
+@28
+tb_phase2_accelerator_core_v2.clk
+tb_phase2_accelerator_core_v2.rst_n
+@201
+-MAIN CONTROL
+@28
+tb_phase2_accelerator_core_v2.start_inference
+tb_phase2_accelerator_core_v2.busy
+tb_phase2_accelerator_core_v2.layer_start
+@22
+tb_phase2_accelerator_core_v2.layer_id[31:0]
+@28
+tb_phase2_accelerator_core_v2.dut.inference_complete
+tb_phase2_accelerator_core_v2.error
+@22
+tb_phase2_accelerator_core_v2.error_code[7:0]
+@200
+-DESCRIPTOR
+@28
+tb_phase2_accelerator_core_v2.descriptor_fetch_start
+tb_phase2_accelerator_core_v2.descriptor_word_valid
+tb_phase2_accelerator_core_v2.descriptor_word_ready
+@22
+tb_phase2_accelerator_core_v2.descriptor_word_index[4:0]
+tb_phase2_accelerator_core_v2.descriptor_word_data[31:0]
+tb_phase2_accelerator_core_v2.active_descriptor_ptr[63:0]
+tb_phase2_accelerator_core_v2.k_groups[15:0]
+tb_phase2_accelerator_core_v2.cfg_flags[5:0]
+tb_phase2_accelerator_core_v2.m_dim[15:0]
+tb_phase2_accelerator_core_v2.n_dim[15:0]
+tb_phase2_accelerator_core_v2.k_dim[15:0]
+@28
+tb_phase2_accelerator_core_v2.precision_mode[1:0]
+@200
+-AGU
+@28
+tb_phase2_accelerator_core_v2.act_addr_valid
+tb_phase2_accelerator_core_v2.act_addr_ready
+@22
+tb_phase2_accelerator_core_v2.act_addr[31:0]
+@28
+tb_phase2_accelerator_core_v2.act_agu_done
+@22
+tb_phase2_accelerator_core_v2.a_base[63:0]
+tb_phase2_accelerator_core_v2.a_tile_stride_bytes[31:0]
+@28
+tb_phase2_accelerator_core_v2.act_agu_busy
+tb_phase2_accelerator_core_v2.weight_addr_valid
+tb_phase2_accelerator_core_v2.weight_addr_ready
+@22
+tb_phase2_accelerator_core_v2.weight_addr[31:0]
+@28
+tb_phase2_accelerator_core_v2.weight_agu_done
+@22
+tb_phase2_accelerator_core_v2.b_base[63:0]
+tb_phase2_accelerator_core_v2.b_tile_stride_bytes[31:0]
+@28
+tb_phase2_accelerator_core_v2.weight_agu_busy
+@200
+-MEMORY AND PING PONG
+@28
+tb_phase2_accelerator_core_v2.act_dma_write_valid
+tb_phase2_accelerator_core_v2.act_dma_write_ready
+@22
+tb_phase2_accelerator_core_v2.act_dma_write_addr[7:0]
+tb_phase2_accelerator_core_v2.act_dma_write_data[63:0]
+@28
+tb_phase2_accelerator_core_v2.act_dma_commit
+tb_phase2_accelerator_core_v2.act_prefetch_complete
+tb_phase2_accelerator_core_v2.act_bank_swap_req
+tb_phase2_accelerator_core_v2.act_bank_swap_ack
+tb_phase2_accelerator_core_v2.act_active_bank
+tb_phase2_accelerator_core_v2.weight_dma_write_valid
+tb_phase2_accelerator_core_v2.weight_dma_write_ready
+@22
+tb_phase2_accelerator_core_v2.weight_dma_write_addr[7:0]
+tb_phase2_accelerator_core_v2.weight_dma_write_data[63:0]
+@28
+tb_phase2_accelerator_core_v2.weight_dma_commit
+tb_phase2_accelerator_core_v2.weight_prefetch_complete
+tb_phase2_accelerator_core_v2.weight_bank_swap_req
+tb_phase2_accelerator_core_v2.weight_bank_swap_ack
+tb_phase2_accelerator_core_v2.weight_active_bank
+tb_phase2_accelerator_core_v2.banks_ready
+@200
+-DATA MOVEMENT
+@28
+tb_phase2_accelerator_core_v2.dut.act_sram_read_valid
+@22
+tb_phase2_accelerator_core_v2.dut.act_sram_read_data[63:0]
+@28
+tb_phase2_accelerator_core_v2.dut.weight_sram_read_valid
+@22
+tb_phase2_accelerator_core_v2.dut.weight_sram_read_data[63:0]
+@28
+tb_phase2_accelerator_core_v2.dut.tile_word_read_req
+tb_phase2_accelerator_core_v2.dut.tile_word_read_ready
+@22
+tb_phase2_accelerator_core_v2.dut.tile_word_read_addr[7:0]
+@28
+tb_phase2_accelerator_core_v2.dut.tile_word_read_last
+tb_phase2_accelerator_core_v2.dut.feeder_inst.act_word_valid
+@22
+tb_phase2_accelerator_core_v2.dut.feeder_inst.act_word[63:0]
+@28
+tb_phase2_accelerator_core_v2.dut.feeder_inst.weight_word_valid
+@22
+tb_phase2_accelerator_core_v2.dut.feeder_inst.weight_word[63:0]
+@28
+tb_phase2_accelerator_core_v2.dut.feeder_inst.input_ready
+@22
+tb_phase2_accelerator_core_v2.dut.feeder_inst.act_row_valid[3:0]
+tb_phase2_accelerator_core_v2.dut.feeder_inst.weight_col_valid[3:0]
+@200
+-SYSTOLIC ARRAY
+@28
+tb_phase2_accelerator_core_v2.dut.array_inst.acc_clear
+tb_phase2_accelerator_core_v2.dut.array_inst.acc_enable
+tb_phase2_accelerator_core_v2.dut.array_inst.advance
+tb_phase2_accelerator_core_v2.dut.array_inst.precision_mode[1:0]
+@22
+tb_phase2_accelerator_core_v2.dut.array_inst.pe_result_valid[15:0]
+@28
+tb_phase2_accelerator_core_v2.dut.array_inst.tile_done
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].mac_valid
+@22
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].i8_prod0[15:0]
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].i8_prod1[15:0]
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].acc0[31:0]
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].acc1[31:0]
+@28
+tb_phase2_accelerator_core_v2.dut.array_inst.gen_rows[0].gen_cols[0].pe_overflow
+tb_phase2_accelerator_core_v2.array_advance
+tb_phase2_accelerator_core_v2.array_tile_done
+@200
+-ZERO BYPASS
+@28
+tb_phase2_accelerator_core_v2.dut.array_inst.zero_bypass_enable
+@22
+tb_phase2_accelerator_core_v2.dut.array_inst.zero_skip_mask[63:0]
+tb_phase2_accelerator_core_v2.dut.array_inst.skip_increment[6:0]
+tb_phase2_accelerator_core_v2.dut.array_inst.zero_skip_count[31:0]
+@200
+-POST PROCESSING AND OUTPUT
+@22
+tb_phase2_accelerator_core_v2.dut.postproc_result_valid[15:0]
+tb_phase2_accelerator_core_v2.dut.saturation_count[31:0]
+tb_phase2_accelerator_core_v2.dut.scale_m0[31:0]
+tb_phase2_accelerator_core_v2.dut.shift_n[4:0]
+@28
+tb_phase2_accelerator_core_v2.dut.output_write_start
+tb_phase2_accelerator_core_v2.dut.writeback_done
+tb_phase2_accelerator_core_v2.postproc_tile_done
+@22
+tb_phase2_accelerator_core_v2.dut.postproc_result_ready[15:0]
+tb_phase2_accelerator_core_v2.dut.postproc_inst.PP_R[0].PP_C[0].lane_sum[33:0]
+@28
+tb_phase2_accelerator_core_v2.dut.postproc_inst.PP_R[0].PP_C[0].sat
+@22
+tb_phase2_accelerator_core_v2.dut.postproc_inst.PP_R[0].PP_C[0].v8[7:0]
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0
