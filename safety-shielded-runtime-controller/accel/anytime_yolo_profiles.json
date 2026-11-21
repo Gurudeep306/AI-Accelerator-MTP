@@ -1,0 +1,47 @@
+{
+  "head1": {
+    "display_name": "Early Head 1",
+    "measured_latency_median_ms": 8.855799998855218,
+    "measured_latency_p90_ms": 9.697439999581547,
+    "measured_network_latency_median_ms": 5.7381999995413935,
+    "measured_network_latency_p90_ms": 6.169569999474334,
+    "measured_accuracy_map50": 0.15198107487894194,
+    "measured_accuracy_map50_95": 0.06559899287363376,
+    "measured_precision": 0.7930535455861071,
+    "measured_recall": 0.19783393501805055,
+    "macs": 2011084800,
+    "reference_gpu": "NVIDIA GeForce GTX 1650 laptop, FP32, batch 1",
+    "input_description": "1280x720 input letterboxed to 640x384; BDD100K test set, 150 images",
+    "measurement_note": "Image-to-box median/p90 includes preprocessing, network up to Head 1, head computation, NMS, and CPU box output."
+  },
+  "head2": {
+    "display_name": "Early Head 2",
+    "measured_latency_median_ms": 10.041699997600517,
+    "measured_latency_p90_ms": 10.977229999116389,
+    "measured_network_latency_median_ms": 6.965149999814457,
+    "measured_network_latency_p90_ms": 7.350270001552417,
+    "measured_accuracy_map50": 0.22341830457030287,
+    "measured_accuracy_map50_95": 0.107617225664254,
+    "measured_precision": 0.7985004686035614,
+    "measured_recall": 0.3075812274368231,
+    "macs": 2483225600,
+    "reference_gpu": "NVIDIA GeForce GTX 1650 laptop, FP32, batch 1",
+    "input_description": "1280x720 input letterboxed to 640x384; BDD100K test set, 150 images",
+    "measurement_note": "Image-to-box median/p90 includes preprocessing, network up to Head 2, head computation, NMS, and CPU box output."
+  },
+  "final": {
+    "display_name": "Final YOLOv8n Head",
+    "measured_latency_median_ms": 12.240750000273692,
+    "measured_latency_p90_ms": 13.711360000161221,
+    "measured_network_latency_median_ms": 9.168250000584521,
+    "measured_network_latency_p90_ms": 9.717609998915576,
+    "measured_accuracy_map50": 0.2924943392704862,
+    "measured_accuracy_map50_95": 0.16189691368483639,
+    "measured_precision": 0.8617731172545281,
+    "measured_recall": 0.3263537906137184,
+    "macs": 4325155200,
+    "reference_gpu": "NVIDIA GeForce GTX 1650 laptop, FP32, batch 1",
+    "input_description": "1280x720 input letterboxed to 640x384; BDD100K test set, 150 images",
+    "measurement_note": "Image-to-box median/p90 includes preprocessing, full network, final head, NMS, and CPU box output."
+  }
+}

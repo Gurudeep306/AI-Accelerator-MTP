@@ -17,7 +17,7 @@ A robot's camera detector has to answer before the next decision is due, be accu
 | **Paidipati Gurudeep** | CS25M111 | Model mapping and execution on the accelerator | [`model-mapping-and-execution/`](model-mapping-and-execution/) · [paper](Model-Mapping-and-Execution.pdf) |
 | **C. Rahul** | CS25M207 | Accelerator RTL design and verification | [`reconfigurable-ai-accelerator-design/`](reconfigurable-ai-accelerator-design/) · [report](Reconfigurable_AI_Accelerator_Project_Report.pdf) |
 | **Rahul Dewangan** | CS25M114 | Accelerator specification and predictive (MPC) runtime controller | [`mpc-runtime-controller/`](mpc-runtime-controller/) |
-| **MD Javid** | CS25M210 | Supervisory runtime controller with safety filter | to be added |
+| **MD Javid** | CS25M210 | Safety-shielded runtime controller (Fixed, Rule-based, MPC, RL) | [`safety-shielded-runtime-controller/`](safety-shielded-runtime-controller/) |
 
 ### Abhishek Kumar Maurya: anytime detector
 - Designed and trained a **GELAN detector with four exits** from scratch on **BDD100K** (65,000 images). Each exit gives a complete answer: early exits are fast, later ones are sharper.
@@ -41,10 +41,11 @@ A robot's camera detector has to answer before the next decision is due, be accu
 - Built a **model-predictive controller** with three strategies (history-based, frame-preview and within-frame), receding horizon **H = 5** with **beam-search** pruning.
 - Generated workload traces from **YOLOv8n on nuScenes** camera frames and evaluated the controllers in a discrete-event **replay harness** at a 33 ms deadline: no deadline misses at quality floors 0.85 and 0.70, and 2 of 80 frames missed by the within-frame controller at 0.45.
 
-### MD Javid: supervisory controller and safety filter
-- Built a closed-loop simulation comparing a **fixed setting** with an explainable **six-rule controller**.
-- Every proposed setting passes a **safety filter** (7 limits: deadline, accuracy, fps, energy, queue, temperature, battery) with a fallback.
-- In a robot scenario (open road, crowd, fog, obstacle) the rule-based controller cut latency by up to **43 %** in hard scenes and power by **70 %** in the open area (modelled).
+### MD Javid: safety-shielded runtime controller
+- Built a closed-loop testbed in which a robot drives through **real pedestrian crowds from the ETH/UCY benchmark** (8 sequences, 2,205 people), and its speed is limited by how quickly perception can detect the next person.
+- The controller picks one of **135 operating points** (clock × FP32/FP16/INT8 × sparsity × anytime-YOLO exit). Four controllers compared: **Fixed, Rule-based, MPC and RL** (a DQfD agent pre-trained on MPC demonstrations).
+- A **safety shield** checks every choice against 5 limits (latency, temperature, miss probability, frame drops, speed) with a Simplex-style fallback; with it, no controller ever hits the thermal throttle.
+- On held-out scenes, **MPC and RL use about 29 % less energy than Fixed** (paired 95 % CI) and beat every one of the 135 static points; the RL agent decides in **0.04 ms** against MPC's ~13 ms. All 14 unit tests pass.
 
 ---
 
@@ -63,6 +64,7 @@ A robot's camera detector has to answer before the next decision is due, be accu
 ├── model-mapping-and-execution/               SCALE-Sim mapping code, inputs and simulation outputs
 ├── reconfigurable-ai-accelerator-design/      Verilog RTL, testbenches, waveforms
 ├── mpc-runtime-controller/                    MPC controllers, replay harness, traces, results
+├── safety-shielded-runtime-controller/        crowd-navigation testbed, shield, Fixed/Rule/MPC/RL controllers
 ├── Model-Mapping-and-Execution.pdf            paper: model mapping and execution
 └── Reconfigurable_AI_Accelerator_Project_Report.pdf   report: RTL design and verification
 ```
