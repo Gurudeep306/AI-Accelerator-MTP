@@ -1,0 +1,460 @@
+==============================================================================
+PRE-SILICON LATENCY AND FEASIBILITY STUDY OF AN ANYTIME OBJECT DETECTOR
+==============================================================================
+run started            : 2026-10-27 10:16:39
+mode                   : full
+
+environment
+  host                   : vm
+  operating system       : Linux-6.18.44-fc-v165-x86_64-with-glibc2.39
+  machine                : x86_64
+  python                 : 3.11.15 at /usr/bin/python3
+  numpy                  : 2.4.4
+  torch                  : 2.14.1+cu130
+  scalesim               : 3.0.0 from https://github.com/scalesim-project/SCALE-Sim.git @ 9f98c43710
+  working directory      : ./model-mapping-and-execution
+
+input files, with a checksum of each
+  inputs/accelerator_workload.csv                 16,911 bytes   sha256 7356f7b0223cbde7
+  inputs/measured_accuracy.json                    1,405 bytes   sha256 2e06c8ed0f85ad44
+  inputs/platform.json                             1,557 bytes   sha256 800c93531dcc1d22
+  src/mdl/common.py                                3,492 bytes   sha256 866de6e5a20ca311
+  src/mdl/detect_head.py                           5,825 bytes   sha256 4dd0942a00d55220
+  src/mdl/gelan_anytime.py                         7,957 bytes   sha256 9a69c28a7b348e6b
+  src/mdl/postprocess.py                           3,914 bytes   sha256 4f1f36f179a4ae24
+
+==============================================================================
+STEP 1   THE WORKLOAD, RECOVERED BY EXECUTING THE DETECTOR
+==============================================================================
+parameters                  : 5,447,012
+  of which BatchNorm        : 17,024
+  convolution weights       : 5,429,808
+
+convolutions executed       : 151
+  3x3                       : 75
+  1x1                       : 76
+  stride 2                  : 7
+multiply-adds per frame     : 8,887,910,400  (8.8879 G)
+
+per stage, in execution order
+stage         convs   MACs (G)   share  weights (KB)  output (KB)
+backbone         27     0.9822   11.1%         449.9      7,275.0
+head1            21     1.7197   19.3%       1,048.2      2,523.0
+fpn              12     0.3629    4.1%         128.5      1,787.5
+head2            21     1.7197   19.3%       1,048.2      2,523.0
+pan              16     0.4383    4.9%         393.5      1,800.0
+head3            21     1.7197   19.3%       1,048.2      2,523.0
+refine           12     0.2257    2.5%         137.8      1,500.0
+head_final       21     1.7197   19.3%       1,048.2      2,523.0
+total           151     8.8879  100.0%       5,302.5     22,454.7
+
+the four heads together     : 6.879 G, 77% of the frame
+head weights of all weights : 79%
+
+head output shape, one head, three pyramid levels
+  stride  8  cls (1, 10, 80, 80)  obj (1, 1, 80, 80)  reg (1, 4, 80, 80)
+  stride 16  cls (1, 10, 40, 40)  obj (1, 1, 40, 40)  reg (1, 4, 40, 40)
+  stride 32  cls (1, 10, 20, 20)  obj (1, 1, 20, 20)  reg (1, 4, 20, 20)
+  grid cells per head       : 8,400
+  values per cell           : 10 class + 1 object + 4 box = 15
+
+wrote out/trace.json
+
+==============================================================================
+STEP 2   CROSS-CHECK AGAINST THE SHIPPED LAYER TABLE
+==============================================================================
+rows in accelerator_workload.csv : 151
+convolutions traced in step 1    : 151
+
+layers compared                  : 151
+fields compared                  : 1,208
+mismatches                       : 0
+
+multiply-add total   traced 8,887,910,400   table 8,887,910,400   difference 0
+weight total         traced 5,429,808   table 5,429,808   difference 0
+folded biases, from the table    : 8,692
+weights plus biases at int8      : 5,311.0 KB
+
+verdict                          : PASS
+
+==============================================================================
+STEP 3   PEAK ACTIVATION WORKING SET, BY LIVENESS ANALYSIS
+==============================================================================
+tensor operations intercepted    : 518
+distinct activation tensors      : 752
+peak live activation, int8       : 3,276,800 bytes = 3,200.0 KB
+reached at operation             : 2 (aten.native_batch_norm.default)
+on-chip BRAM on the target part  : 645,120 bytes = 630.0 KB
+ratio, working set to BRAM       : 5.1x too large
+
+This figure is exact and reproducible: every tensor produced during
+the trace is held, so no identity is ever reused, and three runs on
+the same machine give the same number.
+
+what has to survive each stage boundary, at int8
+  backbone to head 1 and fpn      614,400 B =  600.0 KB   (64, 80, 80)  (96, 40, 40)  (128, 20, 20)
+  fpn to head 2 and pan           614,400 B =  600.0 KB   (64, 80, 80)  (96, 40, 40)  (128, 20, 20)
+  pan to head 3 and refine        614,400 B =  600.0 KB   (64, 80, 80)  (96, 40, 40)  (128, 20, 20)
+  refine to the final head        614,400 B =  600.0 KB   (64, 80, 80)  (96, 40, 40)  (128, 20, 20)
+
+the six largest single activation tensors, at int8
+  1,638,400 values =  1,600.0 KB
+  1,638,400 values =  1,600.0 KB
+  1,638,400 values =  1,600.0 KB
+  1,638,400 values =  1,600.0 KB
+  1,228,800 values =  1,200.0 KB
+    819,200 values =    800.0 KB
+
+wrote out/memory.json
+
+==============================================================================
+STEP 4   THE SAME DETECTOR AT FIVE INPUT SIZES
+==============================================================================
+    input  convs   MACs (G)   vs 640  cells/head  head 1 only (G)
+  640 sq    151      8.888    1.00x       8,400            2.702
+  512 sq    151      5.688    0.64x       5,376            1.729
+  448 sq    151      4.355    0.49x       4,116            1.324
+  384 sq    151      3.200    0.36x       3,024            0.973
+  320 sq    151      2.222    0.25x       2,100            0.675
+
+The layer count never changes. Only the feature maps shrink, so the
+cost falls roughly with the pixel count but not exactly with it.
+
+wrote out/resolutions.json
+
+==============================================================================
+STEP 5   USING THE SCALE-SIM RESULTS ALREADY CACHED (--keep-sim)
+==============================================================================
+No new configuration is simulated. The tables below cover whatever
+is in out/shape_cache/, and say "not simulated" for the rest.
+
+==============================================================================
+A.  THE WORKLOAD, BY STAGE   (traced in step 1)
+==============================================================================
+stage         convs   MACs (G)   share  weights (KB)  output (KB)
+backbone         27     0.9822   11.1%         449.9      7,275.0
+head1            21     1.7197   19.3%       1,048.2      2,523.0
+fpn              12     0.3629    4.1%         128.5      1,787.5
+head2            21     1.7197   19.3%       1,048.2      2,523.0
+pan              16     0.4383    4.9%         393.5      1,800.0
+head3            21     1.7197   19.3%       1,048.2      2,523.0
+refine           12     0.2257    2.5%         137.8      1,500.0
+head_final       21     1.7197   19.3%       1,048.2      2,523.0
+total           151     8.8879  100.0%       5,302.5     22,454.7
+
+the four heads together      : 6.879 G, 77% of the frame
+head weights of all weights  : 79%
+peak live activation         : 3,200 KB at int8
+on-chip BRAM on the part     : 630 KB
+
+==============================================================================
+B.  WORK REQUIRED FOR EACH ANSWER   (traced)
+==============================================================================
+answer     sequential, as written   only what it needs   saving  weights needed (KB)
+head1                     2.702 G              2.702 G       0%              1,498.1
+head2                     4.785 G              3.065 G      36%              1,626.6
+head3                     6.943 G              3.503 G      50%              2,020.1
+final                     8.888 G              3.729 G      58%              2,157.9
+
+==============================================================================
+C.  CYCLES PER FRAME AT 640x640, WHOLE DETECTOR   (SCALE-Sim, every layer)
+==============================================================================
+    array     PEs  fits?               ws              os              is  best util
+8x8           64    yes      141,883,777   not simulated   not simulated      97.9%
+12x12         144    yes       69,104,063   not simulated   not simulated      89.3%
+16x16         256     no       36,138,631   not simulated   not simulated      96.1%
+24x24         576     no       18,571,263   not simulated   not simulated      83.1%
+32x32       1,024     no        9,767,647   not simulated   not simulated      88.9%
+64x64       4,096     no        3,320,490   not simulated   not simulated      65.3%
+128x128     16,384     no        1,716,641       2,493,049       5,284,451      31.6%
+
+"fits" allows 16 slices of fixed logic plus one per cell against the 220 on the Digilent Zybo Z7-20.
+
+==============================================================================
+D.  THE TARGET PLATFORM AT 640x640   (SCALE-Sim, derated to measured RTL)
+==============================================================================
+SCALE-Sim utilisation at 8x8 : 97.9%   (an idealised memory system)
+measured in the RTL build      : 60.1%   (weight-load cycles included)
+so platform cycles = simulated cycles x 1.63
+
+  array   MHz answer           cycles        ms     fps   vs deadline    vs frame
+8x8      100 head1        70,441,923     704.4    1.42      44x over    21x over
+8x8      100 head2        79,750,340     797.5    1.25      50x over    24x over
+8x8      100 head3        91,357,854     913.6    1.09      57x over    27x over
+8x8      100 final        97,179,871     971.8    1.03      61x over    29x over
+8x8      150 head1        70,441,923     469.6    2.13      29x over    14x over
+8x8      150 head2        79,750,340     531.7    1.88      33x over    16x over
+8x8      150 head3        91,357,854     609.1    1.64      38x over    18x over
+8x8      150 final        97,179,871     647.9    1.54      40x over    19x over
+8x8      200 head1        70,441,923     352.2    2.84      22x over    11x over
+8x8      200 head2        79,750,340     398.8    2.51      25x over    12x over
+8x8      200 head3        91,357,854     456.8    2.19      29x over    14x over
+8x8      200 final        97,179,871     485.9    2.06      30x over    15x over
+12x12     100 head1        35,224,831     352.2    2.84      22x over    11x over
+12x12     100 head2        39,754,423     397.5    2.52      25x over    12x over
+12x12     100 head3        45,286,641     452.9    2.21      28x over    14x over
+12x12     100 final        48,151,486     481.5    2.08      30x over    14x over
+12x12     150 head1        35,224,831     234.8    4.26      15x over     7x over
+12x12     150 head2        39,754,423     265.0    3.77      17x over     8x over
+12x12     150 head3        45,286,641     301.9    3.31      19x over     9x over
+12x12     150 final        48,151,486     321.0    3.12      20x over    10x over
+12x12     200 head1        35,224,831     176.1    5.68      11x over     5x over
+12x12     200 head2        39,754,423     198.8    5.03      12x over     6x over
+12x12     200 head3        45,286,641     226.4    4.42      14x over     7x over
+12x12     200 final        48,151,486     240.8    4.15      15x over     7x over
+
+Every row uses the minimal schedule, so every row is a best case.
+
+==============================================================================
+E.  SMALLEST SIMULATED ARRAY THAT MEETS THE DEADLINE   (SCALE-Sim)
+==============================================================================
+Of the array sizes actually simulated, the smallest that lands each
+answer inside 16 ms at 150 MHz, minimal schedule, same derating.
+
+    input          head1         head2         head3         final
+  640 sq          64x64         64x64       128x128       128x128
+  512 sq              -             -             -             -
+  448 sq              -             -             -             -
+  384 sq          32x32         32x32             -             -
+  320 sq          32x32         32x32         32x32         32x32
+
+The part offers 204 cells, which is 14x14.
+A dash means no array size that this run simulated at that input size
+meets the deadline. It does not mean no array size could.
+   640 sq  simulated at: 8x8, 12x12, 16x16, 24x24, 32x32, 64x64, 128x128
+   512 sq  simulated at: 12x12
+   448 sq  simulated at: 12x12
+   384 sq  simulated at: 12x12, 32x32
+   320 sq  simulated at: 12x12, 32x32
+
+==============================================================================
+F.  MEMORY TRAFFIC PER FRAME AT 640x640   (traced, SCALE-Sim for the compute column)
+==============================================================================
+input frame at int8                1,200.0 KB
+weights plus folded bias           5,311.0 KB
+all four answers out                 492.2 KB
+peak live activation               3,200.0 KB
+on-chip BRAM available               630.0 KB
+
+None of that fits on chip, so it all crosses the external bus.
+DDR3L 1 GB, 32-bit peak bandwidth          4.26 GB/s
+
+answer    weights (KB)   frame+out  total (KB)   peak BW    60% BW    compute
+head1          1,498.1     1,323.0     2,821.2     0.68ms     1.13ms     234.8ms
+head2          1,626.6     1,323.0     2,949.7     0.71ms     1.18ms     265.0ms
+head3          2,020.1     1,323.0     3,343.2     0.80ms     1.34ms     301.9ms
+final          2,157.9     1,323.0     3,480.9     0.84ms     1.39ms     321.0ms
+
+Compute times are for 12x12 at 150 MHz. Memory is 208 times
+cheaper than arithmetic here, so the array is the constraint.
+
+==============================================================================
+G.  THE OPERATING-POINT TABLE
+==============================================================================
+Latency is SCALE-Sim. Accuracy is measured on 1,500 unseen images and is
+not simulated here. A setting is admissible only if it meets 16 ms.
+
+  array   MHz answer      latency   mAP50  mAP50-95  recall  admissible
+8x8      150 head1       469.61ms   0.212     0.105   43.5%          no
+8x8      150 head2       531.67ms   0.280     0.141   51.6%          no
+8x8      150 head3       609.05ms   0.299     0.152   52.6%          no
+8x8      150 final       647.87ms   0.299     0.152   52.8%          no
+8x8      400 head1       176.10ms   0.212     0.105   43.5%          no
+8x8      400 head2       199.38ms   0.280     0.141   51.6%          no
+8x8      400 head3       228.39ms   0.299     0.152   52.6%          no
+8x8      400 final       242.95ms   0.299     0.152   52.8%          no
+12x12     150 head1       234.83ms   0.212     0.105   43.5%          no
+12x12     150 head2       265.03ms   0.280     0.141   51.6%          no
+12x12     150 head3       301.91ms   0.299     0.152   52.6%          no
+12x12     150 final       321.01ms   0.299     0.152   52.8%          no
+12x12     400 head1        88.06ms   0.212     0.105   43.5%          no
+12x12     400 head2        99.39ms   0.280     0.141   51.6%          no
+12x12     400 head3       113.22ms   0.299     0.152   52.6%          no
+12x12     400 final       120.38ms   0.299     0.152   52.8%          no
+32x32     150 head1        33.82ms   0.212     0.105   43.5%          no
+32x32     150 head2        38.19ms   0.280     0.141   51.6%          no
+32x32     150 head3        43.73ms   0.299     0.152   52.6%          no
+32x32     150 final        46.49ms   0.299     0.152   52.8%          no
+32x32     400 head1        12.68ms   0.212     0.105   43.5%         yes
+32x32     400 head2        14.32ms   0.280     0.141   51.6%         yes
+32x32     400 head3        16.40ms   0.299     0.152   52.6%          no
+32x32     400 final        17.43ms   0.299     0.152   52.8%          no
+64x64     150 head1        13.18ms   0.212     0.105   43.5%         yes
+64x64     150 head2        14.90ms   0.280     0.141   51.6%         yes
+64x64     150 head3        16.82ms   0.299     0.152   52.6%          no
+64x64     150 final        17.92ms   0.299     0.152   52.8%          no
+64x64     400 head1         4.94ms   0.212     0.105   43.5%         yes
+64x64     400 head2         5.59ms   0.280     0.141   51.6%         yes
+64x64     400 head3         6.31ms   0.299     0.152   52.6%         yes
+64x64     400 final         6.72ms   0.299     0.152   52.8%         yes
+
+admissible settings      : 8 of 32
+most accurate admissible : 64x64 at 400 MHz, head3, 6.31 ms, mAP50 0.299
+fastest admissible       : 64x64 at 400 MHz, head1, 4.94 ms, mAP50 0.212
+answers dominated by a cheaper one : final
+
+==============================================================================
+H.  THE DATASET BEHIND THE ACCURACY COLUMN   (measured, not simulated)
+==============================================================================
+dataset                      BDD100K road scenes
+training images              65,000
+labelled boxes               1,184,427
+boxes per image              18.2
+test images, unseen          1,500
+
+class                boxes   share    AP50
+car                651,562   55.0%   0.656
+traffic sign       221,598   18.7%   0.446
+traffic light      174,708   14.8%   0.408
+pedestrian          85,740    7.2%   0.400
+truck               25,924    2.2%   0.378
+bus                 11,122    0.9%   0.326
+bicycle              6,589    0.6%   0.178
+rider                4,268    0.4%   0.102
+motorcycle           2,798    0.2%   0.093
+train                  118    0.0%   0.000
+
+==============================================================================
+I.  ACHIEVABLE FRAME RATE ON THE TARGET PLATFORM   (SCALE-Sim)
+==============================================================================
+12x12 is the largest array in the sweep that fits the part. Minimal schedule,
+weight stationary, measured derating, cheapest answer only.
+
+    input   MACs (G)         cycles      100 MHz     150 MHz     200 MHz
+  640 sq      2.702     35,224,831     2.84 fps    4.26 fps    5.68 fps
+  512 sq      1.729     22,793,770     4.39 fps    6.58 fps    8.77 fps
+  448 sq      1.324     17,611,425     5.68 fps    8.52 fps   11.36 fps
+  384 sq      0.973     13,117,871     7.62 fps   11.43 fps   15.25 fps
+  320 sq      0.675      9,313,107    10.74 fps   16.11 fps   21.48 fps
+
+==============================================================================
+J.  WHAT WAS SIMULATED, AND THE CHECKS ON IT
+==============================================================================
+simulator                    SCALE-Sim, scalesim-project/SCALE-Sim
+layers in the detector       151
+distinct layer shapes        37
+reuse factor                 4.08x (the four heads are identical in structure)
+shapes giving two answers    0
+
+Every layer is simulated. Because a shape that recurs gives the same
+cycle count every time, which the line above checks, each distinct
+shape is simulated once and its result reused. No cycle count in this
+run is modelled, interpolated or scaled from another one.
+
+    array               ws              os              is
+8x8              complete         not run         not run
+12x12             complete         not run         not run
+16x16             complete         not run         not run
+24x24             complete         not run         not run
+32x32             complete         not run         not run
+64x64             complete         not run         not run
+128x128            complete        complete        complete
+
+SCALE-Sim per shape, 12x12 weight stationary, the ten dearest of the 37 shapes
+  ifmap   k  stride   cin  cout   SCALE-Sim cycles    util  of frame
+  80sq   3       1    64    64          1,852,991   88.4%     42.9%
+ 160sq   3       2    32    64            949,679   88.4%      1.4%
+  40sq   3       1    96    96            941,183   97.9%     21.8%
+ 320sq   3       2    16    32            934,379   88.8%      1.4%
+  80sq   3       2    64    96            658,559   98.0%      1.9%
+ 640sq   3       2     3    16            618,449   50.0%      0.9%
+ 160sq   3       1    16    16            615,215   66.6%      1.8%
+  80sq   3       1    32    32            463,247   88.4%      4.0%
+ 160sq   1       1    64    32            461,411   78.9%      0.7%
+  20sq   3       1   128   128            458,303   89.4%     10.6%
+
+The last column is that shape's share of the frame, counting every
+layer it appears in. SCALE-Sim's own reports are under out/scalesim_runs/.
+
+
+wrote out/results.json
+
+==============================================================================
+AUDIT   WHERE EVERY NUMBER CAME FROM
+==============================================================================
+per-shape SCALE-Sim results on disk : 748
+simulator recorded in them          : SCALE-Sim, scalesim-project/SCALE-Sim
+results.json says the simulator was : SCALE-Sim (scalesim-project/SCALE-Sim)
+
+Every table in the paper, and the file its numbers live in
+table    what it holds                      produced by                  file                  
+I        layer counts, MACs, weights        executing the detector       out/trace.json        
+II       simulator build, shape counts      the sweep, plus the checks   out/results.json      
+III      MACs per answer                    executing the detector       out/trace.json        
+IV       cycles per frame                   SCALE-Sim, per layer         out/shape_cache/      
+V        latency on the platform            SCALE-Sim, then x derate     out/shape_cache/      
+VI       bytes moved, compute time          traced bytes, SCALE-Sim time both                  
+VII      latency and accuracy               SCALE-Sim and measured mAP   both                  
+VIII     smallest array that fits           SCALE-Sim, per array size    out/shape_cache/      
+
+The accuracy column is not simulated and could not be. It is copied
+from inputs/measured_accuracy.json, which records the section of the
+source document each figure came from.
+
+==============================================================================
+CHECK 1   EVERY LATENCY TRACES TO A SIMULATOR FILE
+==============================================================================
+layers in the detector              : 151
+distinct shapes behind them         : 37
+shapes with a SCALE-Sim file        : 37
+shapes with no file                 : 0
+
+Three layers picked at random, and the file each one reads:
+  layer in head3       shape (80, 3, 1, 64, 64)        
+    file      out/shape_cache/8x8_ws_i80_k3_s1_c64_f64.json
+    cycles    3,699,071   util 99.7%   simulated in 506.6s
+  layer in head3       shape (40, 3, 1, 96, 96)        
+    file      out/shape_cache/8x8_ws_i40_k3_s1_c96_f96.json
+    cycles    2,102,111   util 98.6%   simulated in 221.1s
+  layer in backbone    shape (80, 3, 1, 32, 32)        
+    file      out/shape_cache/8x8_ws_i80_k3_s1_c32_f32.json
+    cycles    924,767   util 99.7%   simulated in 82.4s
+
+==============================================================================
+CHECK 2   NOTHING IS INTERPOLATED BETWEEN SHAPES
+==============================================================================
+shapes that occur more than once    : reuse factor 4.08x
+shapes returning two cycle counts   : 0
+
+A shape is simulated once and the result is reused wherever that
+shape appears. That is a lookup, not an interpolation: no cycle count
+is ever derived from a different shape, a different array or a
+different dataflow.
+
+==============================================================================
+CHECK 3   THE WORKLOAD MATCHES THE SHIPPED LAYER TABLE
+==============================================================================
+fields compared                     : 1,208
+fields that disagree                : 0
+verdict                             : PASS
+
+==============================================================================
+THE ONE NUMBER THAT IS NEITHER TRACED NOR SIMULATED
+==============================================================================
+SCALE-Sim utilisation at 8x8          : 97.9%
+utilisation measured in the RTL     : 60.1%
+derating applied to platform rows   : x1.63
+
+That ratio is the only adjustment made to a simulated cycle count
+anywhere in the study. Both halves of it are printed so it can be
+checked, or divided back out. Tables IV and VIII do not carry it.
+
+==============================================================================
+WHAT IS NOT CLAIMED
+==============================================================================
+Sparsity is not simulated. It needs the trained weights, which are not
+  here, so the latencies are upper bounds in that respect.
+Accuracy does not move with the hardware setting. A reduced numeric
+  precision would change it, and quantifying that needs a calibration run.
+Post-processing is excluded. It runs on a fixed candidate grid, so it is
+  bounded and content-independent, but it is not zero.
+The derating was measured at one array size and is assumed to hold at
+  others.
+
+==============================================================================
+run finished in 12.4 seconds
+transcript   : out/simulation_output.txt
+machine data : out/results.json, out/trace.json, out/resolutions.json,
+               out/memory.json, out/crosscheck.json
+SCALE-Sim    : out/shape_cache/ (748 simulated layer shapes)
+==============================================================================

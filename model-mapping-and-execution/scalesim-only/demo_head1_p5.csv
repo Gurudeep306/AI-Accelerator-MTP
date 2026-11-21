@@ -1,0 +1,8 @@
+Layer name,IFMAP Height,IFMAP Width,Filter Height,Filter Width,Channels,Num Filter,Strides,
+000_head1,22,22,3,3,128,128,1,
+001_head1,22,22,3,3,128,128,1,
+002_head1,22,22,3,3,128,128,1,
+003_head1,22,22,3,3,128,128,1,
+004_head1,20,20,1,1,128,10,1,
+005_head1,20,20,1,1,128,1,1,
+006_head1,20,20,1,1,128,4,1,

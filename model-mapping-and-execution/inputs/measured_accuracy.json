@@ -1,0 +1,36 @@
+{
+  "_what_this_is": "Numbers that were MEASURED by the person who trained the detector. Nothing here is simulated, and nothing here is produced by this package. It is copied in so that the latency this package simulates can be joined to an accuracy column.",
+  "_source": "PROJECT_EXPLAINED.md shipped with the detector, sections 8.3, 8.4 and 8.1.",
+  "_checkpoint": "runs/anytime_interrupt/train6_bdd70k/last.pt",
+
+  "dataset": {
+    "name": "BDD100K road scenes",
+    "training_images": 65000,
+    "test_images_unseen": 1500,
+    "source_section": "8.1, row train6"
+  },
+
+  "per_head": {
+    "_source_section": "8.3, train6, 1,500 unseen test images",
+    "_columns": ["mAP50", "mAP50_95", "precision", "recall"],
+    "head1": [0.212, 0.105, 0.621, 0.435],
+    "head2": [0.280, 0.141, 0.680, 0.516],
+    "head3": [0.299, 0.152, 0.690, 0.526],
+    "final": [0.299, 0.152, 0.695, 0.528]
+  },
+
+  "per_class": {
+    "_source_section": "8.4, train6, final head, same test set",
+    "_columns": ["training_boxes", "AP50"],
+    "car":           [651562, 0.656],
+    "traffic sign":  [221598, 0.446],
+    "traffic light": [174708, 0.408],
+    "pedestrian":    [85740,  0.400],
+    "truck":         [25924,  0.378],
+    "bus":           [11122,  0.326],
+    "bicycle":       [6589,   0.178],
+    "rider":         [4268,   0.102],
+    "motorcycle":    [2798,   0.093],
+    "train":         [118,    0.000]
+  }
+}

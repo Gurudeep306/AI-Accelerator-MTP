@@ -1,0 +1,1 @@
+{"peak_live": 3276800, "n_ops": 518, "n_tensors": 752, "bram_bytes": 645120, "carry": {"backbone to head 1 and fpn": 614400, "fpn to head 2 and pan": 614400, "pan to head 3 and refine": 614400, "refine to the final head": 614400}}

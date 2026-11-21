@@ -1,0 +1,42 @@
+{
+  "checkpoint": "runs/anytime_interrupt/train6_bdd70k/last.pt",
+  "n_images": 150,
+  "modes": {
+    "sequential": {
+      "early_head_1": {
+        "median_ms": 20.44969999406021,
+        "p90_ms": 22.33738999639172
+      },
+      "early_head_2": {
+        "median_ms": 29.77449999889359,
+        "p90_ms": 32.91694999206811
+      },
+      "early_head_3": {
+        "median_ms": 38.325200002873316,
+        "p90_ms": 42.21507998299784
+      },
+      "final": {
+        "median_ms": 44.60220001055859,
+        "p90_ms": 48.98918999824673
+      }
+    },
+    "pipelined": {
+      "early_head_1": {
+        "median_ms": 24.49670000351034,
+        "p90_ms": 31.80449999636039
+      },
+      "early_head_2": {
+        "median_ms": 33.71360001619905,
+        "p90_ms": 41.629550003563054
+      },
+      "early_head_3": {
+        "median_ms": 41.776699988986365,
+        "p90_ms": 50.183269986882806
+      },
+      "final": {
+        "median_ms": 46.702199993887916,
+        "p90_ms": 55.859260002034716
+      }
+    }
+  }
+}

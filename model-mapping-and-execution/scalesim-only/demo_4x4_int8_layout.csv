@@ -1,0 +1,7 @@
+Layer name,IFMAP Height Intraline Factor,IFMAP Width Intraline Factor,Filter Height Intraline Factor,Filter Width Intraline Factor,Channel Intraline Factor,Num Filter Intraline Factor,IFMAP Height Intraline Order,IFMAP Width Intraline Order,Channel Intraline Order,IFMAP Height Interline Order,IFMAP Width Interline Order,Channel Interline Order,Num Filter Intraline Order,Channel Intraline Order2,Filter Height Intraline Order,Filter Width Intraline Order,Num Filter Interline Order,Channel Interline Order2,Filter Height Interline Order,Filter Width Interline Order,
+020_elan_p5_bb-cv1,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,
+022_elan_p5_bb-blocks-0,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,
+024_elan_p5_bb-cv3,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,
+045_head1-scale_heads-2-cls_pred,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,
+046_head1-scale_heads-2-obj_pred,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,
+047_head1-scale_heads-2-reg_pred,1,1,1,1,1,1,1,2,3,1,2,3,1,2,3,4,1,2,3,4,

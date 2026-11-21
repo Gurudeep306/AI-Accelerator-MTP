@@ -1,0 +1,47 @@
+{
+  "args": {
+    "data_root": "data/bdd70k",
+    "data_yaml": "data/bdd70k/data.yaml",
+    "train_split": "train",
+    "val_split": "calibration",
+    "img_size": 640,
+    "batch_size": 16,
+    "epochs": 30,
+    "lr": 0.004,
+    "device": "cuda",
+    "no_amp": false,
+    "val_every": 2,
+    "log_dir": "runs/anytime_interrupt/train6_bdd70k",
+    "resume": null,
+    "weights": "runs/anytime_interrupt/train5/last.pt",
+    "workers": 8,
+    "lambda_head1": 0.3,
+    "lambda_head2": 0.5,
+    "lambda_head3": 0.7,
+    "lambda_final": 1.0,
+    "no_augment": false,
+    "mosaic": 1.0,
+    "close_mosaic": 3,
+    "scale": 0.5,
+    "translate": 0.1,
+    "fliplr": 0.5
+  },
+  "head_weights": {
+    "early_head_1": 0.3,
+    "early_head_2": 0.5,
+    "early_head_3": 0.7,
+    "final": 1.0
+  },
+  "class_names": [
+    "pedestrian",
+    "rider",
+    "car",
+    "bus",
+    "truck",
+    "bicycle",
+    "motorcycle",
+    "traffic light",
+    "traffic sign",
+    "train"
+  ]
+}

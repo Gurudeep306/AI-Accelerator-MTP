@@ -1,0 +1,44 @@
+{
+  "_what_this_is": "The target FPGA platform. Every figure here was MEASURED or is a published part specification. Nothing here is produced by this package.",
+  "_source": "The project's own hardware plan, which records a yosys synthesis run against this part and a cycle count from the Verilog testbench.",
+
+  "part": {
+    "board": "Digilent Zybo Z7-20",
+    "device": "Xilinx XC7Z020",
+    "dsp_slices": 220,
+    "luts": 53200,
+    "flipflops": 106400,
+    "bram36_blocks": 140,
+    "bram_bytes": 645120,
+    "dram": "DDR3L 1 GB, 32-bit",
+    "dram_mts": 1066,
+    "dram_bus_bytes": 4
+  },
+
+  "built_design": {
+    "_source": "yosys, against XC7Z020, for the existing 8x8 build",
+    "array": [8, 8],
+    "dsp_total": 80,
+    "dsp_in_array": 64,
+    "luts": 11057,
+    "flipflops": 5201,
+    "bram36_blocks": 8,
+    "measured_array_utilisation": 0.601,
+    "_utilisation_note": "Measured in the Verilog testbench. The schedule is 8 weight-load cycles then 16 compute cycles, so its own ideal is 66.7 per cent and it achieves 60.1 per cent of the array."
+  },
+
+  "deadlines": {
+    "control_deadline_ms": 16.0,
+    "camera_frame_ms": 33.333333,
+    "_note": "33.3 ms is one frame at 30 fps. 16 ms is the budget the control loop allows for perception."
+  },
+
+  "sweep": {
+    "arrays": [[8,8],[12,12],[16,16],[24,24],[32,32],[64,64],[128,128]],
+    "platform_arrays": [[8,8],[12,12]],
+    "platform_clocks_mhz": [100, 150, 200],
+    "design_clocks_mhz": [150, 400],
+    "dataflows": ["ws", "os", "is"],
+    "input_sizes": [640, 512, 448, 384, 320]
+  }
+}

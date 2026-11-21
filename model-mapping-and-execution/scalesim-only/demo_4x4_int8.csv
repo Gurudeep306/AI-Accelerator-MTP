@@ -1,0 +1,7 @@
+Layer name,IFMAP Height,IFMAP Width,Filter Height,Filter Width,Channels,Num Filter,Strides,
+020_elan_p5_bb-cv1,20,20,1,1,64,64,1,
+022_elan_p5_bb-blocks-0,22,22,3,3,32,64,1,
+024_elan_p5_bb-cv3,20,20,1,1,128,128,1,
+045_head1-scale_heads-2-cls_pred,20,20,1,1,64,10,1,
+046_head1-scale_heads-2-obj_pred,20,20,1,1,64,1,1,
+047_head1-scale_heads-2-reg_pred,20,20,1,1,64,4,1,

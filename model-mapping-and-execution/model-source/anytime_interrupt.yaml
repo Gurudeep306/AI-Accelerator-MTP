@@ -1,0 +1,52 @@
+# Configuration for interrupt-driven anytime YOLO inference.
+# Adjust `dataset` and `model` once the real repo/checkpoint/data are
+# available on the target machine (GTX 1650, 4GB VRAM, PyTorch 2.6/CUDA 12.4).
+
+model:
+  repo: "DKuhse/anytime-yolo"
+  config: "models/anytime/tiny/gelan-t-anytime.yaml"
+  checkpoint: null   # path to trained .pt checkpoint
+  device: "cuda"     # falls back to cpu automatically if unavailable
+
+dataset:
+  # Windows path on the user's machine, e.g.:
+  # root: "C:\\Users\\abhis\\Downloads\\archive (2)"
+  root: null
+  data_yaml: null
+  splits:
+    train: "train"
+    val: "calibration"
+    test: "test"
+  classes:
+    0: pedestrian
+    1: rider
+    2: car
+    3: bus
+    4: truck
+    5: bicycle
+    6: motorcycle
+    7: traffic light
+    8: traffic sign
+    9: train
+
+heads:
+  - {id: 1, name: early_head_1}
+  - {id: 2, name: early_head_2}
+  - {id: 3, name: early_head_3}
+  - {id: 4, name: final, is_final: true}
+
+loss_weights:          # brief section 21
+  lambda_head1: 0.3
+  lambda_head2: 0.5
+  lambda_head3: 0.7
+  lambda_final: 1.0
+
+logging:
+  run_dir: "runs/anytime_interrupt"
+
+interrupt:
+  default_interrupt_after_ms: 18.0
+  sensor_threshold_m: 5.0
+
+benchmark:
+  interrupt_times_ms: [5, 10, 15, 20, 25, 30]

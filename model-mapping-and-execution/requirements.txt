@@ -1,0 +1,10 @@
+# Install with:  pip install -r requirements.txt
+#
+# SCALE-Sim is installed from its source repository rather than from PyPI,
+# because the released package (3.0.0, August 2025) is behind the repository.
+# The commit is pinned so that a result can always be matched to the simulator
+# that produced it; run_all.py prints it in the run header.
+torch==2.14.1
+numpy>=1.24
+pillow>=10.0            # only for tools/contact_sheet.py
+scalesim @ git+https://github.com/scalesim-project/SCALE-Sim.git@9f98c4371055a54c75209c2e02b640b897550532
