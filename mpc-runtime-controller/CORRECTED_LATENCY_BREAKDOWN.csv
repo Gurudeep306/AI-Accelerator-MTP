@@ -1,0 +1,14 @@
+component,measured_python_ms,simulated_replay_ms,hardware_unit,applies_to
+Feature Extraction (OpenCV / PIL 1080p),44.62,2.0,Camera ISP / Host CPU,Controller B (Preview)
+Ridge Regression Math (Step 0 Preview),0.0186,0.0186,Host CPU (Vector Dot Product),Controller B (Step 0)
+Slope Forecaster Math (Steps 1..4),0.0028,0.0028,Host CPU (Bounded Extrapolation),Controller B (Steps 1..4)
+Persistence Lookup Math,0.00038,0.00038,Host CPU (Register Read),Persistence Baseline
+Pure EWMA Arithmetic,0.00035,0.00035,Host CPU (Scalar Smoothing),Pure EWMA Baseline
+Controller A EWMA + Clipped Trend,0.0064,0.0064,Host CPU (Deque Slice & Clamp),Controller A
+Controller C Remaining MAC Arithmetic,0.00063,0.00063,Host CPU (Scalar Arithmetic),Controller C (Within-Frame)
+"MPC Decision Search (32 beams, H=5, 18 actions)",5.06,5.06,Host CPU (Branch-and-Bound Beam Search),"All Controllers (A, B, C)"
+Hardware Reconfiguration Latency,0.0,1.0,Accelerator Core (DMA / Weights Reload),All Controllers on Action Switch
+Accelerator Silicon Mid-Frame Stall,0.0,5.06,Accelerator Execution Core (Idle Waiting),Controller C ONLY
+Total Decision Overhead: Controller A,5.0664,5.0664,Host CPU Asynchronous Pipeline,Controller A
+Total Decision Overhead: Controller B (Simulated),49.68,7.08,Camera Pipeline + Host CPU Search,Controller B
+Total Decision Overhead: Controller C (Stall Blocking),5.0606,8.56,Host CPU Search + Mid-Frame Stall + Reconfig,Controller C

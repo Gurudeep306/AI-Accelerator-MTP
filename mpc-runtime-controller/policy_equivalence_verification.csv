@@ -1,0 +1,7 @@
+test_case,orig_action,opt_action,orig_mode,opt_mode,actions_identical,sequences_identical,modes_identical,all_identical
+Light workload,W0.50-E1-INT4,W0.50-E1-INT4,MPC,MPC,True,True,True,True
+Nominal workload,W0.50-E1-INT4,W0.50-E1-INT4,MPC,MPC,True,True,True,True
+Heavy workload,W0.50-E1-INT4,W0.50-E1-INT4,MPC,MPC,True,True,True,True
+Near thermal cap (69.5C vs 70.0C),W0.50-E1-INT4,W0.50-E1-INT4,MPC,MPC,True,True,True,True
+Severe overload triggering fallback/infeasible,W0.50-E1-INT4,W0.50-E1-INT4,MPC,MPC,True,True,True,True
+Thermal override (> 70.0C),W0.50-E1-INT4,W0.50-E1-INT4,SAFETY_FALLBACK,SAFETY_FALLBACK,True,True,True,True

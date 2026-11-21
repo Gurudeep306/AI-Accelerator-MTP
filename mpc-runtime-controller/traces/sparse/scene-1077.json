@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_source": "nuScenes-v1.0-mini",
+  "sequence_id": "scene-1077",
+  "split": "val",
+  "environment_tag": "night_urban",
+  "hardware_mode": "sparse",
+  "camera_channel": "CAM_FRONT",
+  "total_frames": 41,
+  "sampling_rate_fps": 30.0,
+  "target_dnn": {
+    "architecture": "SlimmableMobileNetV2",
+    "nominal_macs": 105420000,
+    "first_layer_mac_fraction": 0.0381
+  },
+  "summary_statistics": {
+    "mean_workload_scale": 0.9620439024390245,
+    "std_workload_scale": 0.01618082347056552,
+    "min_workload_scale": 0.9309,
+    "max_workload_scale": 0.9995,
+    "mean_sparsity": 0.4978951219512195,
+    "std_sparsity": 0.020414508843628627
+  }
+}

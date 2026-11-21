@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_source": "nuScenes-v1.0-mini",
+  "sequence_id": "scene-1094",
+  "split": "test",
+  "environment_tag": "night_rain",
+  "hardware_mode": "sparse",
+  "camera_channel": "CAM_FRONT",
+  "total_frames": 40,
+  "sampling_rate_fps": 30.0,
+  "target_dnn": {
+    "architecture": "SlimmableMobileNetV2",
+    "nominal_macs": 105420000,
+    "first_layer_mac_fraction": 0.0381
+  },
+  "summary_statistics": {
+    "mean_workload_scale": 1.0257049999999999,
+    "std_workload_scale": 0.036832179883900425,
+    "min_workload_scale": 0.9779,
+    "max_workload_scale": 1.0831,
+    "mean_sparsity": 0.417565,
+    "std_sparsity": 0.046479132683388144
+  }
+}

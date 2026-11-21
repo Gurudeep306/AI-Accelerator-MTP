@@ -1,0 +1,63 @@
+{
+  "feature_names": [
+    "brightness_mean",
+    "brightness_std",
+    "edge_density",
+    "histogram_entropy",
+    "temporal_difference",
+    "aspect_ratio",
+    "normalized_pixel_count"
+  ],
+  "feature_mean": [
+    0.4181103305785125,
+    0.19165826446280995,
+    0.14084132231404958,
+    0.824094214876033,
+    0.054854958677686014,
+    1.7778000000000092,
+    0.6944000000000015
+  ],
+  "feature_scale": [
+    0.01624719227791409,
+    0.02588378257314214,
+    0.025670638498021685,
+    0.045299496097612725,
+    0.03357708653046487,
+    1.0,
+    1.0
+  ],
+  "coefficients": [
+    -3.867659982141572e-15,
+    -4.269423989114843e-15,
+    -4.682559245092203e-16,
+    8.215386544862193e-16,
+    -2.535156105482067e-16,
+    4.156154492858969e-40,
+    5.767111046306686e-41
+  ],
+  "intercept": 1.0,
+  "residual_std": 1.232309945898813e-15,
+  "target_min": 1.0,
+  "target_max": 1.0,
+  "feature_min": [
+    0.3655,
+    0.1381,
+    0.0893,
+    0.7018,
+    0.0,
+    1.7778,
+    0.6944
+  ],
+  "feature_max": [
+    0.4489,
+    0.2609,
+    0.223,
+    0.8997,
+    0.1363,
+    1.7778,
+    0.6944
+  ],
+  "training_rows": 242,
+  "ridge_alpha": 0.01,
+  "warning": "Training residual is not held-out validation. Validate on separate scenes before deployment."
+}

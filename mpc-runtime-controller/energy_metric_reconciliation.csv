@@ -1,0 +1,2 @@
+scenario,mpc_step0_energy_mj,bb_step0_energy_mj,corrected_step0_diff_mj,mpc_cum_energy_mj,bb_cum_energy_mj,corrected_cum_diff_mj,flawed_phase3_diff_mj,root_cause
+Baseline_Nominal_H5,0.00012299997000000002,0.00012299997000000002,0.0,0.00061499985,0.00061499985,0.0,-0.0004919998800000001,Phase 3 subtracted 5-step cumulative energy from 1-step energy

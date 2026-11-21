@@ -1,0 +1,4 @@
+deadline_ms,orig128_mean_dec_ms,opt32_mean_dec_ms,orig128_p95_lat_ms,opt32_p95_lat_ms,orig128_misses,opt32_misses,orig128_rejected,opt32_rejected,orig128_energy_mj,opt32_energy_mj
+50.0,32.13,4.9,41.19,7.86,0,0,0,0,4.305,4.305
+33.333,18.72,5.3,44.45,10.16,26,0,13,0,2.349,4.305
+25.0,15.8,5.03,38.86,7.53,30,0,15,0,2.14,4.305

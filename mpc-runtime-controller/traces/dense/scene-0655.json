@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_source": "nuScenes-v1.0-mini",
+  "sequence_id": "scene-0655",
+  "split": "train",
+  "environment_tag": "day_clear",
+  "hardware_mode": "dense",
+  "camera_channel": "CAM_FRONT",
+  "total_frames": 41,
+  "sampling_rate_fps": 30.0,
+  "target_dnn": {
+    "architecture": "SlimmableMobileNetV2",
+    "nominal_macs": 105420000,
+    "first_layer_mac_fraction": 0.0381
+  },
+  "summary_statistics": {
+    "mean_workload_scale": 1.0,
+    "std_workload_scale": 0.0,
+    "min_workload_scale": 1.0,
+    "max_workload_scale": 1.0,
+    "mean_sparsity": 0.3906024390243903,
+    "std_sparsity": 0.00813038527887008
+  }
+}

@@ -1,0 +1,65 @@
+# SYNTHETIC STRESS-TEST PROFILES: FOR SOFTWARE ALGORITHM & SEARCH ROBUSTNESS TESTING ONLY.
+# NOT REAL HARDWARE MEASUREMENTS. DO NOT CITE AS PHYSICAL SILICON CHARACTERISTICS.
+# Introduces non-monotonic energy-latency trade-offs, state/thermal sensitivity, and quality margins.
+profile_family,width,exit,bits,latency_ms,energy_mj,power_w,validated_quality,latency_std_ms,power_std_w,energy_std_mj,quality_std,thermal_sensitivity,desc
+# Family A: Standard Calibrated Baseline (for comparison)
+baseline,0.5,1,4,1.37,0.123,0.089781,0.86,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.5,2,4,1.56,0.151,0.096795,0.87,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.5,3,4,1.63,0.192,0.117791,0.88,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,1,4,2.13,0.160,0.075117,0.89,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.5,1,8,2.73,0.134,0.049084,0.89,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,2,4,2.79,0.224,0.080287,0.90,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,3,4,2.94,0.315,0.107143,0.91,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.5,2,8,3.09,0.165,0.053398,0.91,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.5,3,8,3.23,0.207,0.064087,0.92,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,1,4,3.85,0.260,0.067532,0.92,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,1,8,4.24,0.180,0.042453,0.93,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,2,4,4.70,0.368,0.078298,0.93,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,3,4,4.97,0.527,0.106036,0.94,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,2,8,5.55,0.253,0.045586,0.94,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,0.75,3,8,5.86,0.345,0.058874,0.95,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,1,8,7.69,0.379,0.049285,0.95,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,2,8,9.38,0.523,0.055757,0.96,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+baseline,1.0,3,8,9.91,0.663,0.066902,0.97,0.05,0.005,0.005,0.01,0.0,Standard monotonic profile
+
+# Family B: Pareto Trade-Off & Inversion Profile
+# W0.50-E1-INT4 is slow & high-energy under-utilization; W0.75-E1-INT8 has ultra-low energy but moderate latency; W1.0-E1-INT4 has fastest latency.
+tradeoff_inversion,0.5,1,4,3.20,0.280,0.087500,0.86,0.05,0.005,0.005,0.01,0.0,Low-width packing inefficiency
+tradeoff_inversion,0.5,2,4,3.50,0.310,0.088571,0.87,0.05,0.005,0.005,0.01,0.0,Low-width packing inefficiency
+tradeoff_inversion,0.5,3,4,3.80,0.350,0.092105,0.88,0.05,0.005,0.005,0.01,0.0,Low-width packing inefficiency
+tradeoff_inversion,0.75,1,4,1.80,0.140,0.077778,0.89,0.05,0.005,0.005,0.01,0.0,Optimal INT4 compute density
+tradeoff_inversion,0.5,1,8,4.10,0.220,0.053658,0.89,0.05,0.005,0.005,0.01,0.0,Low-power slow INT8
+tradeoff_inversion,0.75,2,4,2.20,0.180,0.081818,0.90,0.05,0.005,0.005,0.01,0.0,Good trade-off point
+tradeoff_inversion,0.75,3,4,2.60,0.230,0.088462,0.91,0.05,0.005,0.005,0.01,0.0,High quality INT4
+tradeoff_inversion,0.5,2,8,4.50,0.250,0.055556,0.91,0.05,0.005,0.005,0.01,0.0,Slow INT8
+tradeoff_inversion,0.5,3,8,4.80,0.290,0.060417,0.92,0.05,0.005,0.005,0.01,0.0,Slow INT8
+tradeoff_inversion,1.0,1,4,1.10,0.190,0.172727,0.92,0.05,0.005,0.005,0.01,0.0,Ultra-fast high-power sprint
+tradeoff_inversion,0.75,1,8,3.10,0.115,0.037097,0.93,0.05,0.005,0.005,0.01,0.0,Lowest overall energy!
+tradeoff_inversion,1.0,2,4,1.40,0.260,0.185714,0.93,0.05,0.005,0.005,0.01,0.0,Fast sprint
+tradeoff_inversion,1.0,3,4,1.70,0.340,0.200000,0.94,0.05,0.005,0.005,0.01,0.0,Fast high-quality sprint
+tradeoff_inversion,0.75,2,8,3.60,0.160,0.044444,0.94,0.05,0.005,0.005,0.01,0.0,Low energy high quality
+tradeoff_inversion,0.75,3,8,4.00,0.210,0.052500,0.95,0.05,0.005,0.005,0.01,0.0,High quality INT8
+tradeoff_inversion,1.0,1,8,2.80,0.210,0.075000,0.95,0.05,0.005,0.005,0.01,0.0,High throughput INT8
+tradeoff_inversion,1.0,2,8,3.40,0.300,0.088235,0.96,0.05,0.005,0.005,0.01,0.0,High throughput INT8
+tradeoff_inversion,1.0,3,8,3.90,0.410,0.105128,0.97,0.05,0.005,0.005,0.01,0.0,Maximum quality baseline
+
+# Family C: Thermal Sensitivity Profile
+# High INT4 fast actions experience heavy thermal throttling penalty at higher die temperatures
+thermal_stress,0.5,1,4,1.40,0.125,0.089286,0.86,0.05,0.005,0.005,0.01,0.02,Standard baseline
+thermal_stress,0.5,2,4,1.60,0.155,0.096875,0.87,0.05,0.005,0.005,0.01,0.02,Standard baseline
+thermal_stress,0.5,3,4,1.70,0.195,0.114706,0.88,0.05,0.005,0.005,0.01,0.03,Standard baseline
+thermal_stress,0.75,1,4,2.20,0.165,0.075000,0.89,0.05,0.005,0.005,0.01,0.03,Standard baseline
+thermal_stress,0.5,1,8,2.80,0.138,0.049286,0.89,0.05,0.005,0.005,0.01,0.01,Low thermal leakage
+thermal_stress,0.75,2,4,2.85,0.228,0.080000,0.90,0.05,0.005,0.005,0.01,0.04,Standard baseline
+thermal_stress,0.75,3,4,3.00,0.320,0.106667,0.91,0.05,0.005,0.005,0.01,0.04,Standard baseline
+thermal_stress,0.5,2,8,3.15,0.170,0.053968,0.91,0.05,0.005,0.005,0.01,0.01,Low thermal leakage
+thermal_stress,0.5,3,8,3.30,0.212,0.064242,0.92,0.05,0.005,0.005,0.01,0.01,Low thermal leakage
+thermal_stress,1.0,1,4,1.20,0.220,0.183333,0.92,0.05,0.005,0.005,0.01,0.08,High thermal dissipation
+thermal_stress,0.75,1,8,4.30,0.185,0.043023,0.93,0.05,0.005,0.005,0.01,0.01,Ultra low thermal leakage
+thermal_stress,1.0,2,4,1.50,0.310,0.206667,0.93,0.05,0.005,0.005,0.01,0.09,High thermal dissipation
+thermal_stress,1.0,3,4,1.80,0.440,0.244444,0.94,0.05,0.005,0.005,0.01,0.10,High thermal dissipation
+thermal_stress,0.75,2,8,5.65,0.258,0.045664,0.94,0.05,0.005,0.005,0.01,0.01,Low thermal leakage
+thermal_stress,0.75,3,8,5.95,0.350,0.058824,0.95,0.05,0.005,0.005,0.01,0.01,Low thermal leakage
+thermal_stress,1.0,1,8,7.80,0.385,0.049359,0.95,0.05,0.005,0.005,0.01,0.02,Low thermal leakage
+thermal_stress,1.0,2,8,9.50,0.530,0.055789,0.96,0.05,0.005,0.005,0.01,0.02,Low thermal leakage
+thermal_stress,1.0,3,8,10.05,0.670,0.066667,0.97,0.05,0.005,0.005,0.01,0.02,Low thermal leakage

@@ -1,0 +1,4 @@
+horizon,actions_count,total_combinations,direct_evals,bb_evals,bb_pruned_pct,direct_score_mj,bb_score_mj,direct_time_ms,bb_time_ms,mpc_time_ms,direct_action,bb_action,mpc_action,bb_matches_direct,mpc_matches_bb,seq_match
+3,18,5832,5832,67,98.85116598079561,0.384,0.384,50.28000008314848,2.8822000604122877,6.3952000346034765,W0.50-E1-INT4,W0.50-E1-INT4,W0.50-E1-INT4,True,True,True
+4,18,104976,104976,282,99.73136716963877,0.512,0.512,1093.5563000384718,12.777999974787235,3.7577999755740166,W0.50-E1-INT4,W0.50-E1-INT4,W0.50-E1-INT4,True,True,True
+5,18,1889568,1889568,1346,99.92876678690578,0.64,0.64,,58.263400103896856,5.012499867007136,W0.50-E1-INT4,W0.50-E1-INT4,W0.50-E1-INT4,True,True,True

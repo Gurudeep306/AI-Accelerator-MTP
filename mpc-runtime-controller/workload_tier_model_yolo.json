@@ -1,0 +1,98 @@
+{
+  "model_type": "MultinomialLogisticRegression",
+  "target_type": "three_class_computational_budget_tier",
+  "feature_names": [
+    "brightness_mean",
+    "brightness_std",
+    "edge_density",
+    "histogram_entropy",
+    "temporal_difference",
+    "aspect_ratio",
+    "normalized_pixel_count"
+  ],
+  "feature_mean": [
+    0.4181103305785124,
+    0.1916582644628099,
+    0.1408413223140496,
+    0.8240942148760331,
+    0.054854958677685944,
+    1.7777999999999996,
+    0.6944
+  ],
+  "feature_scale": [
+    0.01624719227791409,
+    0.02588378257314212,
+    0.025670638498021696,
+    0.045299496097612725,
+    0.03357708653046487,
+    1.0,
+    1.0
+  ],
+  "classes": [
+    0,
+    1,
+    2
+  ],
+  "tier_gmac_map": {
+    "0": 0.65579904,
+    "1": 1.47554784,
+    "2": 2.62319616
+  },
+  "coefficients": [
+    [
+      -0.34929530094030276,
+      -0.14125273235452074,
+      -0.059667030558370276,
+      0.04799370976053835,
+      0.40852931192783587,
+      -8.589272691153158e-17,
+      0.0
+    ],
+    [
+      0.4097686138845511,
+      0.49434325398706846,
+      0.07515588432844167,
+      -0.08228351430989982,
+      -0.5676155618320312,
+      4.7784270166317146e-17,
+      0.0
+    ],
+    [
+      -0.060473312944247654,
+      -0.3530905216325535,
+      -0.015488853770070529,
+      0.03428980454936449,
+      0.15908624990419895,
+      3.810845674521471e-17,
+      0.0
+    ]
+  ],
+  "intercepts": [
+    -0.4276550171700657,
+    0.24021242150680952,
+    0.18744259566325736
+  ],
+  "train_accuracy": 0.4917,
+  "val_accuracy": 0.4756,
+  "test_accuracy": 0.45,
+  "val_f1_weighted": 0.4203,
+  "test_f1_weighted": 0.2964,
+  "split_method": "scene_based",
+  "train_scenes": [
+    "scene-0061",
+    "scene-0103",
+    "scene-0553",
+    "scene-0655",
+    "scene-0757",
+    "scene-0796"
+  ],
+  "val_scenes": [
+    "scene-0916",
+    "scene-1077"
+  ],
+  "test_scenes": [
+    "scene-1094",
+    "scene-1100"
+  ],
+  "provenance_note": "Target labels are proxy detection-retention tiers relative to R3; does not represent ground-truth 2D bounding box mAP against nuScenes annotations."
+}

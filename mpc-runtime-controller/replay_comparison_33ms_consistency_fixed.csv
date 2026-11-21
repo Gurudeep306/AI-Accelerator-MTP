@@ -1,0 +1,361 @@
+frame_id,controller,arrival_ms,dispatch_ms,completion_ms,e2e_latency_ms,deadline_miss,action,mode,reason,decision_ms,preview_ms,reconfig_ms,total_energy_mj,quality,temp_c,queue_depth,host_queue_depth,accel_queue_depth,pred_e2e_latency_ms,pred_total_energy_mj
+0,Controller A (History),0.00,14.87,15.99,15.99,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.87,0.00,0.00,0.100,0.860,35.00,0,0,0,13.42,0.128
+1,Controller A (History),33.33,48.31,49.58,16.25,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.98,0.00,0.00,0.114,0.860,35.00,0,0,0,14.60,0.105
+2,Controller A (History),66.67,82.59,83.76,17.10,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.92,0.00,0.00,0.105,0.860,35.00,0,0,0,16.19,0.119
+3,Controller A (History),100.00,115.96,117.20,17.20,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.96,0.00,0.00,0.111,0.860,35.00,0,0,0,16.14,0.110
+4,Controller A (History),133.33,150.49,151.78,18.45,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,17.15,0.00,0.00,0.116,0.860,35.00,0,0,0,16.26,0.116
+5,Controller A (History),166.67,181.83,183.12,16.45,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.16,0.00,0.00,0.115,0.860,35.00,0,0,0,17.27,0.121
+6,Controller A (History),200.00,214.91,216.04,16.04,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.91,0.00,0.00,0.102,0.860,35.00,0,0,0,17.26,0.120
+7,Controller A (History),233.33,248.23,249.40,16.07,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,0.00,0.00,0.105,0.860,35.00,0,0,0,17.10,0.106
+8,Controller A (History),266.67,281.66,282.68,16.01,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.99,0.00,0.00,0.092,0.860,35.00,0,0,0,16.37,0.109
+9,Controller A (History),300.00,314.83,315.84,15.84,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.83,0.00,0.00,0.091,0.860,35.00,0,0,0,16.05,0.095
+10,Controller A (History),333.33,348.20,349.26,15.93,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.87,0.00,0.00,0.095,0.860,35.00,0,0,0,15.96,0.094
+11,Controller A (History),366.67,381.71,382.81,16.14,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.04,0.00,0.00,0.099,0.860,35.00,0,0,0,16.00,0.099
+12,Controller A (History),400.00,414.97,416.14,16.14,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.97,0.00,0.00,0.105,0.860,35.00,0,0,0,16.04,0.103
+13,Controller A (History),433.33,448.25,449.46,16.12,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.92,0.00,0.00,0.108,0.860,35.00,0,0,0,16.18,0.110
+14,Controller A (History),466.67,481.48,482.72,16.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.81,0.00,0.00,0.111,0.860,35.00,0,0,0,16.17,0.113
+15,Controller A (History),500.00,518.06,519.76,19.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,18.06,0.00,0.00,0.152,0.860,35.00,0,0,0,16.20,0.116
+16,Controller A (History),533.33,548.66,550.36,17.03,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.33,0.00,0.00,0.153,0.860,35.00,0,0,0,16.72,0.158
+17,Controller A (History),566.67,581.36,583.10,16.43,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.69,0.00,0.00,0.157,0.860,35.00,0,0,0,16.73,0.159
+18,Controller A (History),600.00,614.86,616.54,16.54,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.86,0.00,0.00,0.151,0.860,35.00,0,0,0,16.72,0.163
+19,Controller A (History),633.33,648.23,650.07,16.74,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.89,0.00,0.00,0.166,0.860,35.00,0,0,0,16.60,0.157
+20,Controller A (History),666.67,681.79,683.72,17.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.12,0.00,0.00,0.173,0.860,35.00,0,0,0,16.81,0.173
+21,Controller A (History),700.00,715.23,717.17,17.17,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.23,0.00,0.00,0.175,0.860,35.00,0,0,0,16.89,0.180
+22,Controller A (History),733.33,748.35,750.41,17.08,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.02,0.00,0.00,0.185,0.860,35.00,0,0,0,16.91,0.182
+23,Controller A (History),766.67,781.57,783.66,16.99,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.91,0.00,0.00,0.187,0.860,35.00,0,0,0,17.15,0.192
+24,Controller A (History),800.00,814.85,816.97,16.97,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.85,0.00,0.00,0.191,0.860,35.00,0,0,0,17.18,0.195
+25,Controller A (History),833.33,848.19,850.20,16.87,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.85,0.00,0.00,0.181,0.860,35.00,0,0,0,17.22,0.198
+26,Controller A (History),866.67,885.85,887.82,21.16,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,19.18,0.00,0.00,0.177,0.860,35.00,0,0,0,17.00,0.188
+27,Controller A (History),900.00,915.10,917.05,17.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.10,0.00,0.00,0.176,0.860,35.00,0,0,0,16.95,0.185
+28,Controller A (History),933.33,948.22,950.12,16.78,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.89,0.00,0.00,0.170,0.860,35.00,0,0,0,16.93,0.183
+29,Controller A (History),966.67,981.54,983.37,16.70,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.87,0.00,0.00,0.165,0.860,35.00,0,0,0,16.85,0.177
+30,Controller A (History),1000.00,1014.91,1017.40,17.40,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.91,0.00,0.00,0.223,0.860,35.00,0,0,0,16.79,0.171
+31,Controller A (History),1033.33,1048.21,1050.66,17.33,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.87,0.00,0.00,0.221,0.860,35.00,0,0,0,17.49,0.232
+32,Controller A (History),1066.67,1081.51,1084.03,17.37,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.84,0.00,0.00,0.227,0.860,35.00,0,0,0,17.44,0.230
+33,Controller A (History),1100.00,1114.04,1116.47,16.47,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.04,0.00,0.00,0.218,0.860,35.00,0,0,0,17.49,0.236
+34,Controller A (History),1133.33,1148.49,1151.03,17.69,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.15,0.00,0.00,0.228,0.860,35.00,0,0,0,17.38,0.227
+35,Controller A (History),1166.67,1180.93,1183.36,16.70,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.26,0.00,0.00,0.218,0.860,35.00,0,0,0,17.50,0.237
+36,Controller A (History),1200.00,1214.87,1217.28,17.28,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.87,0.00,0.00,0.217,0.860,35.00,0,0,0,17.36,0.227
+37,Controller A (History),1233.33,1248.21,1250.69,17.35,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.88,0.00,0.00,0.222,0.860,35.00,0,0,0,17.35,0.226
+38,Controller A (History),1266.67,1281.78,1284.30,17.64,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.12,0.00,0.00,0.226,0.860,35.00,0,0,0,17.43,0.231
+39,Controller A (History),1300.00,1314.47,1317.00,17.00,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.47,0.00,0.00,0.227,0.860,35.00,0,0,0,17.49,0.236
+40,Controller A (History),1333.33,1348.06,1349.45,16.11,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.73,0.00,0.00,0.124,0.860,35.00,0,0,0,17.49,0.236
+41,Controller A (History),1366.67,1382.03,1383.38,16.72,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.37,0.00,0.00,0.121,0.860,35.00,0,0,0,16.30,0.129
+42,Controller A (History),1400.00,1414.92,1416.30,16.30,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.92,0.00,0.00,0.124,0.860,35.00,0,0,0,16.28,0.126
+43,Controller A (History),1433.33,1448.25,1449.54,16.21,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.92,0.00,0.00,0.116,0.860,35.00,0,0,0,16.35,0.129
+44,Controller A (History),1466.67,1481.56,1482.76,16.09,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.89,0.00,0.00,0.108,0.860,35.00,0,0,0,16.26,0.121
+45,Controller A (History),1500.00,1514.90,1516.09,16.09,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,0.00,0.00,0.106,0.860,35.00,0,0,0,16.16,0.112
+46,Controller A (History),1533.33,1548.18,1549.30,15.97,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.85,0.00,0.00,0.101,0.860,35.00,0,0,0,16.15,0.111
+47,Controller A (History),1566.67,1582.02,1583.13,16.47,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.35,0.00,0.00,0.100,0.860,35.00,0,0,0,16.06,0.105
+48,Controller A (History),1600.00,1616.29,1617.40,17.40,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.29,0.00,0.00,0.100,0.860,35.00,0,0,0,16.06,0.104
+49,Controller A (History),1633.33,1649.06,1650.20,16.86,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.73,0.00,0.00,0.102,0.860,35.00,0,0,0,16.06,0.104
+50,Controller A (History),1666.67,1685.25,1686.47,19.80,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,18.58,0.00,0.00,0.109,0.860,35.00,0,0,0,16.53,0.106
+51,Controller A (History),1700.00,1722.86,1724.13,24.13,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,22.86,0.00,0.00,0.114,0.860,35.00,0,0,0,16.99,0.113
+52,Controller A (History),1733.33,1750.31,1751.60,18.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.98,0.00,0.00,0.116,0.860,35.00,0,0,0,17.60,0.119
+53,Controller A (History),1766.67,1782.45,1783.79,17.12,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.79,0.00,0.00,0.120,0.860,35.00,0,0,0,18.31,0.120
+54,Controller A (History),1800.00,1816.86,1818.22,18.22,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.86,0.00,0.00,0.123,0.860,35.00,0,0,0,18.36,0.125
+55,Controller A (History),1833.33,1849.22,1850.61,17.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.88,0.00,0.00,0.125,0.860,35.00,0,0,0,18.39,0.128
+56,Controller A (History),1866.67,1883.45,1884.95,18.28,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.78,0.00,0.00,0.135,0.860,35.00,0,0,0,18.30,0.130
+57,Controller A (History),1900.00,1917.04,1918.49,18.49,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,17.04,0.00,0.00,0.130,0.860,35.00,0,0,0,18.33,0.140
+58,Controller A (History),1933.33,1950.85,1952.26,18.93,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,17.51,0.00,0.00,0.127,0.860,35.00,0,0,0,18.28,0.135
+59,Controller A (History),1966.67,1982.78,1984.21,17.55,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.11,0.00,0.00,0.129,0.860,35.00,0,0,0,18.32,0.132
+0,Controller B (Preview),0.00,18.09,19.21,19.21,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.89,1.20,0.00,0.130,0.860,35.00,0,0,0,14.62,0.157
+1,Controller B (Preview),33.33,51.00,52.27,18.94,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.47,1.20,0.00,0.144,0.860,35.00,0,0,0,17.07,0.158
+2,Controller B (Preview),66.67,84.78,85.95,19.28,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.91,1.20,0.00,0.135,0.860,35.00,0,0,0,19.02,0.152
+3,Controller B (Preview),100.00,116.60,117.84,17.84,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.40,1.20,0.00,0.141,0.860,35.00,0,0,0,19.24,0.152
+4,Controller B (Preview),133.33,150.38,151.68,18.34,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.85,1.20,0.00,0.146,0.860,35.00,0,0,0,19.05,0.155
+5,Controller B (Preview),166.67,183.14,184.43,17.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.28,1.20,0.00,0.145,0.860,35.00,0,0,0,19.04,0.154
+6,Controller B (Preview),200.00,216.09,217.23,17.23,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.89,1.20,0.00,0.132,0.860,35.00,0,0,0,18.42,0.153
+7,Controller B (Preview),233.33,249.41,250.58,17.24,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.88,1.20,0.00,0.135,0.860,35.00,0,0,0,18.00,0.156
+8,Controller B (Preview),266.67,282.84,283.86,17.19,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.97,1.20,0.00,0.122,0.860,35.00,0,0,0,17.83,0.152
+9,Controller B (Preview),300.00,316.26,317.27,17.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.06,1.20,0.00,0.121,0.860,35.00,0,0,0,17.56,0.155
+10,Controller B (Preview),333.33,349.72,350.78,17.45,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.19,1.20,0.00,0.125,0.860,35.00,0,0,0,17.56,0.155
+11,Controller B (Preview),366.67,383.09,384.19,17.52,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.22,1.20,0.00,0.129,0.860,35.00,0,0,0,17.53,0.152
+12,Controller B (Preview),400.00,416.31,417.49,17.49,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.11,1.20,0.00,0.135,0.860,35.00,0,0,0,17.63,0.154
+13,Controller B (Preview),433.33,450.15,451.36,18.02,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.62,1.20,0.00,0.138,0.860,35.00,0,0,0,17.70,0.155
+14,Controller B (Preview),466.67,482.77,484.01,17.34,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,1.20,0.00,0.141,0.860,35.00,0,0,0,17.82,0.159
+15,Controller B (Preview),500.00,516.15,517.85,17.85,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.95,1.20,0.00,0.182,0.860,35.00,0,0,0,18.38,0.209
+16,Controller B (Preview),533.33,549.38,551.09,17.75,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.85,1.20,0.00,0.183,0.860,35.00,0,0,0,18.21,0.201
+17,Controller B (Preview),566.67,582.82,584.56,17.89,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.95,1.20,0.00,0.187,0.860,35.00,0,0,0,18.12,0.207
+18,Controller B (Preview),600.00,616.31,617.99,17.99,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.11,1.20,0.00,0.181,0.860,35.00,0,0,0,18.10,0.205
+19,Controller B (Preview),633.33,649.54,651.38,18.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.00,1.20,0.00,0.196,0.860,35.00,0,0,0,18.12,0.207
+20,Controller B (Preview),666.67,682.82,684.75,18.08,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.96,1.20,0.00,0.203,0.860,35.00,0,0,0,18.17,0.212
+21,Controller B (Preview),700.00,716.20,718.14,18.14,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.00,1.20,0.00,0.205,0.860,35.00,0,0,0,18.08,0.203
+22,Controller B (Preview),733.33,749.39,751.45,18.12,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.86,1.20,0.00,0.215,0.860,35.00,0,0,0,18.15,0.206
+23,Controller B (Preview),766.67,782.77,784.85,18.19,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,1.20,0.00,0.217,0.860,35.00,0,0,0,18.21,0.211
+24,Controller B (Preview),800.00,816.15,818.27,18.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.95,1.20,0.00,0.221,0.860,35.00,0,0,0,18.09,0.204
+25,Controller B (Preview),833.33,848.97,850.99,17.66,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.44,1.20,0.00,0.211,0.860,35.00,0,0,0,18.09,0.205
+26,Controller B (Preview),866.67,882.66,884.63,17.97,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.79,1.20,0.00,0.207,0.860,35.00,0,0,0,18.11,0.211
+27,Controller B (Preview),900.00,915.64,917.60,17.60,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.44,1.20,0.00,0.206,0.860,35.00,0,0,0,18.04,0.208
+28,Controller B (Preview),933.33,948.86,950.75,17.42,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.32,1.20,0.00,0.200,0.860,35.00,0,0,0,17.94,0.206
+29,Controller B (Preview),966.67,982.34,984.17,17.50,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.47,1.20,0.00,0.195,0.860,35.00,0,0,0,17.53,0.200
+30,Controller B (Preview),1000.00,1015.57,1018.05,18.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.37,1.20,0.00,0.253,0.860,35.00,0,0,0,17.88,0.231
+31,Controller B (Preview),1033.33,1049.02,1051.48,18.15,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.49,1.20,0.00,0.251,0.860,35.00,0,0,0,17.88,0.231
+32,Controller B (Preview),1066.67,1082.26,1084.79,18.12,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.40,1.20,0.00,0.257,0.860,35.00,0,0,0,17.88,0.231
+33,Controller B (Preview),1100.00,1115.55,1117.98,17.98,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.35,1.20,0.00,0.248,0.860,35.00,0,0,0,17.83,0.231
+34,Controller B (Preview),1133.33,1148.87,1151.41,18.08,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.34,1.20,0.00,0.258,0.860,35.00,0,0,0,17.83,0.231
+35,Controller B (Preview),1166.67,1182.21,1184.64,17.98,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.34,1.20,0.00,0.248,0.860,35.00,0,0,0,17.80,0.231
+36,Controller B (Preview),1200.00,1215.87,1218.29,18.29,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.67,1.20,0.00,0.247,0.860,35.00,0,0,0,17.79,0.231
+37,Controller B (Preview),1233.33,1248.98,1251.45,18.12,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.44,1.20,0.00,0.252,0.860,35.00,0,0,0,17.79,0.231
+38,Controller B (Preview),1266.67,1282.85,1285.37,18.71,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.98,1.20,0.00,0.256,0.860,35.00,0,0,0,17.79,0.231
+39,Controller B (Preview),1300.00,1317.58,1320.11,20.11,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,16.38,1.20,0.00,0.257,0.860,35.00,0,0,0,17.88,0.231
+40,Controller B (Preview),1333.33,1349.02,1350.40,17.07,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.48,1.20,0.00,0.154,0.860,35.00,0,0,0,17.36,0.164
+41,Controller B (Preview),1366.67,1382.26,1383.61,16.94,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.39,1.20,0.00,0.151,0.860,35.00,0,0,0,17.38,0.165
+42,Controller B (Preview),1400.00,1415.76,1417.14,17.14,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.56,1.20,0.00,0.154,0.860,35.00,0,0,0,17.13,0.160
+43,Controller B (Preview),1433.33,1448.94,1450.23,16.90,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.41,1.20,0.00,0.146,0.860,35.00,0,0,0,17.25,0.164
+44,Controller B (Preview),1466.67,1482.27,1483.47,16.80,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.40,1.20,0.00,0.138,0.860,35.00,0,0,0,17.15,0.162
+45,Controller B (Preview),1500.00,1515.63,1516.81,16.81,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.43,1.20,0.00,0.136,0.860,35.00,0,0,0,17.09,0.164
+46,Controller B (Preview),1533.33,1548.98,1550.10,16.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.45,1.20,0.00,0.131,0.860,35.00,0,0,0,17.15,0.169
+47,Controller B (Preview),1566.67,1582.34,1583.46,16.79,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.48,1.20,0.00,0.130,0.860,35.00,0,0,0,17.12,0.164
+48,Controller B (Preview),1600.00,1616.55,1617.66,17.66,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.35,1.20,0.00,0.130,0.860,35.00,0,0,0,17.11,0.163
+49,Controller B (Preview),1633.33,1649.25,1650.39,17.05,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.71,1.20,0.00,0.132,0.860,35.00,0,0,0,17.14,0.164
+50,Controller B (Preview),1666.67,1682.51,1683.73,17.06,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.65,1.20,0.00,0.139,0.860,35.00,0,0,0,17.19,0.167
+51,Controller B (Preview),1700.00,1715.61,1716.88,16.88,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.41,1.20,0.00,0.144,0.860,35.00,0,0,0,17.34,0.165
+52,Controller B (Preview),1733.33,1749.32,1750.61,17.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.78,1.20,0.00,0.146,0.860,35.00,0,0,0,17.40,0.170
+53,Controller B (Preview),1766.67,1782.92,1784.26,17.59,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.06,1.20,0.00,0.150,0.860,35.00,0,0,0,17.37,0.161
+54,Controller B (Preview),1800.00,1816.17,1817.53,17.53,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.97,1.20,0.00,0.153,0.860,35.00,0,0,0,17.44,0.168
+55,Controller B (Preview),1833.33,1849.92,1851.31,17.98,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.39,1.20,0.00,0.155,0.860,35.00,0,0,0,17.52,0.169
+56,Controller B (Preview),1866.67,1882.99,1884.49,17.83,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.13,1.20,0.00,0.165,0.860,35.00,0,0,0,17.68,0.166
+57,Controller B (Preview),1900.00,1916.20,1917.65,17.65,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.00,1.20,0.00,0.160,0.860,35.00,0,0,0,17.80,0.169
+58,Controller B (Preview),1933.33,1949.44,1950.85,17.52,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,1.20,0.00,0.157,0.860,35.00,0,0,0,17.74,0.164
+59,Controller B (Preview),1966.67,1982.28,1983.72,17.06,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.42,1.20,0.00,0.159,0.860,35.00,0,0,0,17.67,0.163
+0,Controller C (Within-Frame),0.00,0.00,15.53,15.53,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.41,0.00,0.00,0.100,0.860,35.00,0,0,0,13.37,0.124
+1,Controller C (Within-Frame),33.33,33.33,49.12,15.79,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.52,0.00,0.00,0.114,0.860,35.00,0,0,0,14.60,0.126
+2,Controller C (Within-Frame),66.67,66.67,82.27,15.60,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.43,0.00,0.00,0.105,0.860,35.00,0,0,0,15.80,0.125
+3,Controller C (Within-Frame),100.00,100.00,115.60,15.60,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.36,0.00,0.00,0.111,0.860,35.00,0,0,0,15.82,0.125
+4,Controller C (Within-Frame),133.33,133.33,148.82,15.48,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.19,0.00,0.00,0.116,0.860,35.00,0,0,0,15.81,0.126
+5,Controller C (Within-Frame),166.67,166.67,182.31,15.64,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.35,0.00,0.00,0.115,0.860,35.00,0,0,0,15.81,0.126
+6,Controller C (Within-Frame),200.00,200.00,215.49,15.49,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.36,0.00,0.00,0.102,0.860,35.00,0,0,0,15.73,0.124
+7,Controller C (Within-Frame),233.33,233.33,248.84,15.50,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.34,0.00,0.00,0.105,0.860,35.00,0,0,0,15.74,0.124
+8,Controller C (Within-Frame),266.67,266.67,282.02,15.35,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.33,0.00,0.00,0.092,0.860,35.00,0,0,0,15.71,0.123
+9,Controller C (Within-Frame),300.00,300.00,315.52,15.52,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.52,0.00,0.00,0.091,0.860,35.00,0,0,0,15.70,0.122
+10,Controller C (Within-Frame),333.33,333.33,348.86,15.53,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.47,0.00,0.00,0.095,0.860,35.00,0,0,0,15.72,0.123
+11,Controller C (Within-Frame),366.67,366.67,382.09,15.42,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.32,0.00,0.00,0.099,0.860,35.00,0,0,0,15.73,0.124
+12,Controller C (Within-Frame),400.00,400.00,415.77,15.77,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.59,0.00,0.00,0.105,0.860,35.00,0,0,0,15.72,0.125
+13,Controller C (Within-Frame),433.33,433.33,448.89,15.55,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.35,0.00,0.00,0.108,0.860,35.00,0,0,0,15.86,0.125
+14,Controller C (Within-Frame),466.67,466.67,482.18,15.51,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.28,0.00,0.00,0.111,0.860,35.00,0,0,0,15.87,0.125
+15,Controller C (Within-Frame),500.00,500.00,516.09,16.09,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.39,0.00,0.00,0.152,0.860,35.00,0,0,0,15.81,0.132
+16,Controller C (Within-Frame),533.33,533.33,549.86,16.52,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.82,0.00,0.00,0.153,0.860,35.00,0,0,0,15.81,0.132
+17,Controller C (Within-Frame),566.67,566.67,583.46,16.79,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.05,0.00,0.00,0.157,0.860,35.00,0,0,0,15.86,0.132
+18,Controller C (Within-Frame),600.00,600.00,616.06,16.06,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.38,0.00,0.00,0.151,0.860,35.00,0,0,0,15.85,0.131
+19,Controller C (Within-Frame),633.33,633.33,649.77,16.44,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.59,0.00,0.00,0.166,0.860,35.00,0,0,0,15.88,0.134
+20,Controller C (Within-Frame),666.67,666.67,683.41,16.75,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.82,0.00,0.00,0.173,0.860,35.00,0,0,0,16.08,0.135
+21,Controller C (Within-Frame),700.00,700.00,716.78,16.78,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.83,0.00,0.00,0.175,0.860,35.00,0,0,0,16.32,0.135
+22,Controller C (Within-Frame),733.33,733.33,750.21,16.87,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.81,0.00,0.00,0.185,0.860,35.00,0,0,0,16.34,0.137
+23,Controller C (Within-Frame),766.67,766.67,783.87,17.20,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.12,0.00,0.00,0.187,0.860,35.00,0,0,0,16.33,0.137
+24,Controller C (Within-Frame),800.00,800.00,817.29,17.29,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.17,0.00,0.00,0.191,0.860,35.00,0,0,0,16.35,0.137
+25,Controller C (Within-Frame),833.33,833.33,850.37,17.03,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.02,0.00,0.00,0.181,0.860,35.00,0,0,0,16.34,0.136
+26,Controller C (Within-Frame),866.67,866.67,883.28,16.61,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.64,0.00,0.00,0.177,0.860,35.00,0,0,0,16.52,0.135
+27,Controller C (Within-Frame),900.00,900.00,916.77,16.77,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.82,0.00,0.00,0.176,0.860,35.00,0,0,0,16.52,0.135
+28,Controller C (Within-Frame),933.33,933.33,949.68,16.35,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.45,0.00,0.00,0.170,0.860,35.00,0,0,0,16.51,0.134
+29,Controller C (Within-Frame),966.67,966.67,982.74,16.07,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.24,0.00,0.00,0.165,0.860,35.00,0,0,0,16.30,0.134
+30,Controller C (Within-Frame),1000.00,1000.00,1017.04,17.04,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.56,0.00,0.00,0.223,0.860,35.00,0,0,0,16.22,0.142
+31,Controller C (Within-Frame),1033.33,1033.33,1050.16,16.82,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.37,0.00,0.00,0.221,0.860,35.00,0,0,0,16.13,0.142
+32,Controller C (Within-Frame),1066.67,1066.67,1083.57,16.91,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.38,0.00,0.00,0.227,0.860,35.00,0,0,0,16.04,0.143
+33,Controller C (Within-Frame),1100.00,1100.00,1116.82,16.82,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.40,0.00,0.00,0.218,0.860,35.00,0,0,0,15.95,0.141
+34,Controller C (Within-Frame),1133.33,1133.33,1150.23,16.89,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.35,0.00,0.00,0.228,0.860,35.00,0,0,0,15.97,0.143
+35,Controller C (Within-Frame),1166.67,1166.67,1183.43,16.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.33,0.00,0.00,0.218,0.860,35.00,0,0,0,15.95,0.142
+36,Controller C (Within-Frame),1200.00,1200.00,1216.71,16.71,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.29,0.00,0.00,0.217,0.860,35.00,0,0,0,15.94,0.141
+37,Controller C (Within-Frame),1233.33,1233.33,1254.75,21.42,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,18.95,0.00,0.00,0.222,0.860,35.00,0,0,0,15.93,0.142
+38,Controller C (Within-Frame),1266.67,1266.67,1283.75,17.08,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.56,0.00,0.00,0.226,0.860,35.00,0,0,0,15.94,0.143
+39,Controller C (Within-Frame),1300.00,1300.00,1316.89,16.89,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.36,0.00,0.00,0.227,0.860,35.00,0,0,0,15.94,0.143
+40,Controller C (Within-Frame),1333.33,1333.33,1349.05,15.72,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.34,0.00,0.00,0.124,0.860,35.01,0,0,0,15.77,0.127
+41,Controller C (Within-Frame),1366.67,1366.67,1382.45,15.79,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.44,0.00,0.00,0.121,0.860,35.01,0,0,0,15.77,0.127
+42,Controller C (Within-Frame),1400.00,1400.00,1415.76,15.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.38,0.00,0.00,0.124,0.860,35.01,0,0,0,15.85,0.127
+43,Controller C (Within-Frame),1433.33,1433.33,1449.29,15.96,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.66,0.00,0.00,0.116,0.860,35.01,0,0,0,15.78,0.126
+44,Controller C (Within-Frame),1466.67,1466.67,1482.35,15.68,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.48,0.00,0.00,0.108,0.860,35.01,0,0,0,15.77,0.125
+45,Controller C (Within-Frame),1500.00,1500.00,1515.59,15.59,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.41,0.00,0.00,0.106,0.860,35.01,0,0,0,15.82,0.125
+46,Controller C (Within-Frame),1533.33,1533.33,1551.47,18.13,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,17.01,0.00,0.00,0.101,0.860,35.01,0,0,0,15.81,0.124
+47,Controller C (Within-Frame),1566.67,1566.67,1583.16,16.49,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.38,0.00,0.00,0.100,0.860,35.01,0,0,0,15.85,0.124
+48,Controller C (Within-Frame),1600.00,1600.00,1616.39,16.39,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.27,0.00,0.00,0.100,0.860,35.01,0,0,0,16.04,0.124
+49,Controller C (Within-Frame),1633.33,1633.33,1649.78,16.45,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.31,0.00,0.00,0.102,0.860,35.01,0,0,0,16.65,0.124
+50,Controller C (Within-Frame),1666.67,1666.67,1682.41,15.74,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.53,0.00,0.00,0.109,0.860,35.01,0,0,0,16.70,0.125
+51,Controller C (Within-Frame),1700.00,1700.00,1715.75,15.75,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.48,0.00,0.00,0.114,0.860,35.01,0,0,0,16.71,0.126
+52,Controller C (Within-Frame),1733.33,1733.33,1749.09,15.76,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.47,0.00,0.00,0.116,0.860,35.01,0,0,0,16.67,0.126
+53,Controller C (Within-Frame),1766.67,1766.67,1783.24,16.57,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.24,0.00,0.00,0.120,0.860,35.01,0,0,0,15.93,0.127
+54,Controller C (Within-Frame),1800.00,1800.00,1816.31,16.31,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.95,0.00,0.00,0.123,0.860,35.01,0,0,0,15.94,0.127
+55,Controller C (Within-Frame),1833.33,1833.33,1849.61,16.28,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.88,0.00,0.00,0.125,0.860,35.01,0,0,0,15.94,0.128
+56,Controller C (Within-Frame),1866.67,1866.67,1883.07,16.40,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.90,0.00,0.00,0.135,0.860,35.01,0,0,0,16.32,0.129
+57,Controller C (Within-Frame),1900.00,1900.00,1916.51,16.51,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.06,0.00,0.00,0.130,0.860,35.01,0,0,0,16.32,0.128
+58,Controller C (Within-Frame),1933.33,1933.33,1950.07,16.74,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,15.32,0.00,0.00,0.127,0.860,35.01,0,0,0,16.37,0.128
+59,Controller C (Within-Frame),1966.67,1966.67,1982.94,16.27,False,W0.50-E1-INT4,MPC,Lowest-energy feasible sequence over receding horizon,14.83,0.00,0.00,0.129,0.860,35.01,0,0,0,16.37,0.128
+0,Fixed Nominal (W1.00-E3-INT8),0.00,0.00,8.09,8.09,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.541,0.970,35.00,0,0,0,N/A,N/A
+1,Fixed Nominal (W1.00-E3-INT8),33.33,33.33,42.53,9.20,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.615,0.970,35.00,0,0,0,N/A,N/A
+2,Fixed Nominal (W1.00-E3-INT8),66.67,66.67,75.15,8.48,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.567,0.970,35.00,0,0,0,N/A,N/A
+3,Fixed Nominal (W1.00-E3-INT8),100.00,100.00,108.96,8.96,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.599,0.970,35.00,0,0,0,N/A,N/A
+4,Fixed Nominal (W1.00-E3-INT8),133.33,133.33,142.69,9.36,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.626,0.970,35.00,0,0,0,N/A,N/A
+5,Fixed Nominal (W1.00-E3-INT8),166.67,166.67,175.96,9.30,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.622,0.970,35.00,0,0,0,N/A,N/A
+6,Fixed Nominal (W1.00-E3-INT8),200.00,200.00,208.19,8.19,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.548,0.970,35.00,0,0,0,N/A,N/A
+7,Fixed Nominal (W1.00-E3-INT8),233.33,233.33,241.76,8.43,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.564,0.970,35.00,0,0,0,N/A,N/A
+8,Fixed Nominal (W1.00-E3-INT8),266.67,266.67,274.04,7.37,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.493,0.970,35.00,0,0,0,N/A,N/A
+9,Fixed Nominal (W1.00-E3-INT8),300.00,300.00,307.29,7.29,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.488,0.970,35.00,0,0,0,N/A,N/A
+10,Fixed Nominal (W1.00-E3-INT8),333.33,333.33,340.98,7.65,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.512,0.970,35.00,0,0,0,N/A,N/A
+11,Fixed Nominal (W1.00-E3-INT8),366.67,366.67,374.62,7.95,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.532,0.970,35.00,0,0,0,N/A,N/A
+12,Fixed Nominal (W1.00-E3-INT8),400.00,400.00,408.50,8.50,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.568,0.970,35.00,0,0,0,N/A,N/A
+13,Fixed Nominal (W1.00-E3-INT8),433.33,433.33,442.06,8.72,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.584,0.970,35.00,0,0,0,N/A,N/A
+14,Fixed Nominal (W1.00-E3-INT8),466.67,466.67,475.62,8.96,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.599,0.970,35.00,0,0,0,N/A,N/A
+15,Fixed Nominal (W1.00-E3-INT8),500.00,500.00,512.26,12.26,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.820,0.970,35.00,0,0,0,N/A,N/A
+16,Fixed Nominal (W1.00-E3-INT8),533.33,533.33,545.65,12.32,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.824,0.970,35.00,0,0,0,N/A,N/A
+17,Fixed Nominal (W1.00-E3-INT8),566.67,566.67,579.28,12.61,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.844,0.970,35.00,0,0,0,N/A,N/A
+18,Fixed Nominal (W1.00-E3-INT8),600.00,600.00,612.17,12.17,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.814,0.970,35.00,0,0,0,N/A,N/A
+19,Fixed Nominal (W1.00-E3-INT8),633.33,633.33,646.70,13.37,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.894,0.970,35.00,0,0,0,N/A,N/A
+20,Fixed Nominal (W1.00-E3-INT8),666.67,666.67,680.60,13.93,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.932,0.970,35.00,0,0,0,N/A,N/A
+21,Fixed Nominal (W1.00-E3-INT8),700.00,700.00,714.06,14.06,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.941,0.970,35.00,0,0,0,N/A,N/A
+22,Fixed Nominal (W1.00-E3-INT8),733.33,733.33,748.23,14.90,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.997,0.970,35.00,0,0,0,N/A,N/A
+23,Fixed Nominal (W1.00-E3-INT8),766.67,766.67,781.74,15.07,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.008,0.970,35.00,0,0,0,N/A,N/A
+24,Fixed Nominal (W1.00-E3-INT8),800.00,800.00,815.36,15.36,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.027,0.970,35.00,0,0,0,N/A,N/A
+25,Fixed Nominal (W1.00-E3-INT8),833.33,833.33,847.92,14.59,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.976,0.970,35.00,0,0,0,N/A,N/A
+26,Fixed Nominal (W1.00-E3-INT8),866.67,866.67,880.96,14.29,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.956,0.970,35.00,0,0,0,N/A,N/A
+27,Fixed Nominal (W1.00-E3-INT8),900.00,900.00,914.15,14.15,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.947,0.970,35.00,0,0,0,N/A,N/A
+28,Fixed Nominal (W1.00-E3-INT8),933.33,933.33,947.03,13.70,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.916,0.970,35.00,0,0,0,N/A,N/A
+29,Fixed Nominal (W1.00-E3-INT8),966.67,966.67,979.94,13.27,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.888,0.970,35.00,0,0,0,N/A,N/A
+30,Fixed Nominal (W1.00-E3-INT8),1000.00,1000.00,1017.99,17.99,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.203,0.970,35.00,0,0,0,N/A,N/A
+31,Fixed Nominal (W1.00-E3-INT8),1033.33,1033.33,1051.11,17.78,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.189,0.970,35.00,0,0,0,N/A,N/A
+32,Fixed Nominal (W1.00-E3-INT8),1066.67,1066.67,1084.95,18.28,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.223,0.970,35.00,0,0,0,N/A,N/A
+33,Fixed Nominal (W1.00-E3-INT8),1100.00,1100.00,1117.55,17.55,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.174,0.970,35.00,0,0,0,N/A,N/A
+34,Fixed Nominal (W1.00-E3-INT8),1133.33,1133.33,1151.69,18.36,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.228,0.970,35.00,0,0,0,N/A,N/A
+35,Fixed Nominal (W1.00-E3-INT8),1166.67,1166.67,1184.25,17.59,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.177,0.970,35.00,0,0,0,N/A,N/A
+36,Fixed Nominal (W1.00-E3-INT8),1200.00,1200.00,1217.50,17.50,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.171,0.970,35.00,0,0,0,N/A,N/A
+37,Fixed Nominal (W1.00-E3-INT8),1233.33,1233.33,1251.23,17.90,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.198,0.970,35.01,0,0,0,N/A,N/A
+38,Fixed Nominal (W1.00-E3-INT8),1266.67,1266.67,1284.91,18.24,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.220,0.970,35.01,0,0,0,N/A,N/A
+39,Fixed Nominal (W1.00-E3-INT8),1300.00,1300.00,1318.31,18.31,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,1.225,0.970,35.01,0,0,0,N/A,N/A
+40,Fixed Nominal (W1.00-E3-INT8),1333.33,1333.33,1343.34,10.00,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.669,0.970,35.01,0,0,0,N/A,N/A
+41,Fixed Nominal (W1.00-E3-INT8),1366.67,1366.67,1376.43,9.76,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.653,0.970,35.01,0,0,0,N/A,N/A
+42,Fixed Nominal (W1.00-E3-INT8),1400.00,1400.00,1409.96,9.96,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.666,0.970,35.01,0,0,0,N/A,N/A
+43,Fixed Nominal (W1.00-E3-INT8),1433.33,1433.33,1442.69,9.35,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.626,0.970,35.01,0,0,0,N/A,N/A
+44,Fixed Nominal (W1.00-E3-INT8),1466.67,1466.67,1475.35,8.68,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.581,0.970,35.01,0,0,0,N/A,N/A
+45,Fixed Nominal (W1.00-E3-INT8),1500.00,1500.00,1508.57,8.57,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.573,0.970,35.01,0,0,0,N/A,N/A
+46,Fixed Nominal (W1.00-E3-INT8),1533.33,1533.33,1541.43,8.10,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.542,0.970,35.01,0,0,0,N/A,N/A
+47,Fixed Nominal (W1.00-E3-INT8),1566.67,1566.67,1574.71,8.04,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.538,0.970,35.01,0,0,0,N/A,N/A
+48,Fixed Nominal (W1.00-E3-INT8),1600.00,1600.00,1608.08,8.08,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.541,0.970,35.01,0,0,0,N/A,N/A
+49,Fixed Nominal (W1.00-E3-INT8),1633.33,1633.33,1641.56,8.22,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.550,0.970,35.01,0,0,0,N/A,N/A
+50,Fixed Nominal (W1.00-E3-INT8),1666.67,1666.67,1675.45,8.78,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.588,0.970,35.01,0,0,0,N/A,N/A
+51,Fixed Nominal (W1.00-E3-INT8),1700.00,1700.00,1709.18,9.18,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.614,0.970,35.01,0,0,0,N/A,N/A
+52,Fixed Nominal (W1.00-E3-INT8),1733.33,1733.33,1742.66,9.32,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.624,0.970,35.01,0,0,0,N/A,N/A
+53,Fixed Nominal (W1.00-E3-INT8),1766.67,1766.67,1776.32,9.65,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.646,0.970,35.01,0,0,0,N/A,N/A
+54,Fixed Nominal (W1.00-E3-INT8),1800.00,1800.00,1809.88,9.88,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.661,0.970,35.01,0,0,0,N/A,N/A
+55,Fixed Nominal (W1.00-E3-INT8),1833.33,1833.33,1843.40,10.07,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.673,0.970,35.01,0,0,0,N/A,N/A
+56,Fixed Nominal (W1.00-E3-INT8),1866.67,1866.67,1877.52,10.85,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.726,0.970,35.01,0,0,0,N/A,N/A
+57,Fixed Nominal (W1.00-E3-INT8),1900.00,1900.00,1910.47,10.47,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.701,0.970,35.01,0,0,0,N/A,N/A
+58,Fixed Nominal (W1.00-E3-INT8),1933.33,1933.33,1943.54,10.21,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.683,0.970,35.01,0,0,0,N/A,N/A
+59,Fixed Nominal (W1.00-E3-INT8),1966.67,1966.67,1977.08,10.41,False,W1.00-E3-INT8,FIXED,Static baseline configuration,0.00,0.00,0.00,0.696,0.970,35.01,0,0,0,N/A,N/A
+0,Fixed Low-Power (W0.50-E1-INT4),0.00,0.00,1.12,1.12,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.100,0.860,35.00,0,0,0,N/A,N/A
+1,Fixed Low-Power (W0.50-E1-INT4),33.33,33.33,34.61,1.27,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.114,0.860,35.00,0,0,0,N/A,N/A
+2,Fixed Low-Power (W0.50-E1-INT4),66.67,66.67,67.84,1.17,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.105,0.860,35.00,0,0,0,N/A,N/A
+3,Fixed Low-Power (W0.50-E1-INT4),100.00,100.00,101.24,1.24,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.111,0.860,35.00,0,0,0,N/A,N/A
+4,Fixed Low-Power (W0.50-E1-INT4),133.33,133.33,134.63,1.29,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.116,0.860,35.00,0,0,0,N/A,N/A
+5,Fixed Low-Power (W0.50-E1-INT4),166.67,166.67,167.95,1.29,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.115,0.860,35.00,0,0,0,N/A,N/A
+6,Fixed Low-Power (W0.50-E1-INT4),200.00,200.00,201.13,1.13,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.102,0.860,35.00,0,0,0,N/A,N/A
+7,Fixed Low-Power (W0.50-E1-INT4),233.33,233.33,234.50,1.17,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.105,0.860,35.00,0,0,0,N/A,N/A
+8,Fixed Low-Power (W0.50-E1-INT4),266.67,266.67,267.69,1.02,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.092,0.860,35.00,0,0,0,N/A,N/A
+9,Fixed Low-Power (W0.50-E1-INT4),300.00,300.00,301.01,1.01,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.091,0.860,35.00,0,0,0,N/A,N/A
+10,Fixed Low-Power (W0.50-E1-INT4),333.33,333.33,334.39,1.06,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.095,0.860,35.00,0,0,0,N/A,N/A
+11,Fixed Low-Power (W0.50-E1-INT4),366.67,366.67,367.77,1.10,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.099,0.860,35.00,0,0,0,N/A,N/A
+12,Fixed Low-Power (W0.50-E1-INT4),400.00,400.00,401.17,1.17,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.105,0.860,35.00,0,0,0,N/A,N/A
+13,Fixed Low-Power (W0.50-E1-INT4),433.33,433.33,434.54,1.21,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.108,0.860,35.00,0,0,0,N/A,N/A
+14,Fixed Low-Power (W0.50-E1-INT4),466.67,466.67,467.90,1.24,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.111,0.860,35.00,0,0,0,N/A,N/A
+15,Fixed Low-Power (W0.50-E1-INT4),500.00,500.00,501.70,1.70,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.152,0.860,35.00,0,0,0,N/A,N/A
+16,Fixed Low-Power (W0.50-E1-INT4),533.33,533.33,535.04,1.70,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.153,0.860,35.00,0,0,0,N/A,N/A
+17,Fixed Low-Power (W0.50-E1-INT4),566.67,566.67,568.41,1.74,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.157,0.860,35.00,0,0,0,N/A,N/A
+18,Fixed Low-Power (W0.50-E1-INT4),600.00,600.00,601.68,1.68,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.151,0.860,35.00,0,0,0,N/A,N/A
+19,Fixed Low-Power (W0.50-E1-INT4),633.33,633.33,635.18,1.85,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.166,0.860,35.00,0,0,0,N/A,N/A
+20,Fixed Low-Power (W0.50-E1-INT4),666.67,666.67,668.59,1.93,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.173,0.860,35.00,0,0,0,N/A,N/A
+21,Fixed Low-Power (W0.50-E1-INT4),700.00,700.00,701.94,1.94,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.175,0.860,35.00,0,0,0,N/A,N/A
+22,Fixed Low-Power (W0.50-E1-INT4),733.33,733.33,735.39,2.06,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.185,0.860,35.00,0,0,0,N/A,N/A
+23,Fixed Low-Power (W0.50-E1-INT4),766.67,766.67,768.75,2.08,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.187,0.860,35.00,0,0,0,N/A,N/A
+24,Fixed Low-Power (W0.50-E1-INT4),800.00,800.00,802.12,2.12,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.191,0.860,35.00,0,0,0,N/A,N/A
+25,Fixed Low-Power (W0.50-E1-INT4),833.33,833.33,835.35,2.02,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.181,0.860,35.00,0,0,0,N/A,N/A
+26,Fixed Low-Power (W0.50-E1-INT4),866.67,866.67,868.64,1.98,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.177,0.860,35.00,0,0,0,N/A,N/A
+27,Fixed Low-Power (W0.50-E1-INT4),900.00,900.00,901.96,1.96,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.176,0.860,35.00,0,0,0,N/A,N/A
+28,Fixed Low-Power (W0.50-E1-INT4),933.33,933.33,935.23,1.89,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.170,0.860,35.00,0,0,0,N/A,N/A
+29,Fixed Low-Power (W0.50-E1-INT4),966.67,966.67,968.50,1.84,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.165,0.860,35.00,0,0,0,N/A,N/A
+30,Fixed Low-Power (W0.50-E1-INT4),1000.00,1000.00,1002.49,2.49,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.223,0.860,35.00,0,0,0,N/A,N/A
+31,Fixed Low-Power (W0.50-E1-INT4),1033.33,1033.33,1035.79,2.46,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.221,0.860,35.00,0,0,0,N/A,N/A
+32,Fixed Low-Power (W0.50-E1-INT4),1066.67,1066.67,1069.19,2.53,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.227,0.860,35.00,0,0,0,N/A,N/A
+33,Fixed Low-Power (W0.50-E1-INT4),1100.00,1100.00,1102.43,2.43,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.218,0.860,35.00,0,0,0,N/A,N/A
+34,Fixed Low-Power (W0.50-E1-INT4),1133.33,1133.33,1135.87,2.54,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.228,0.860,35.00,0,0,0,N/A,N/A
+35,Fixed Low-Power (W0.50-E1-INT4),1166.67,1166.67,1169.10,2.43,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.218,0.860,35.00,0,0,0,N/A,N/A
+36,Fixed Low-Power (W0.50-E1-INT4),1200.00,1200.00,1202.42,2.42,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.217,0.860,35.00,0,0,0,N/A,N/A
+37,Fixed Low-Power (W0.50-E1-INT4),1233.33,1233.33,1235.81,2.47,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.222,0.860,35.00,0,0,0,N/A,N/A
+38,Fixed Low-Power (W0.50-E1-INT4),1266.67,1266.67,1269.19,2.52,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.226,0.860,35.00,0,0,0,N/A,N/A
+39,Fixed Low-Power (W0.50-E1-INT4),1300.00,1300.00,1302.53,2.53,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.227,0.860,35.00,0,0,0,N/A,N/A
+40,Fixed Low-Power (W0.50-E1-INT4),1333.33,1333.33,1334.72,1.38,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.124,0.860,35.01,0,0,0,N/A,N/A
+41,Fixed Low-Power (W0.50-E1-INT4),1366.67,1366.67,1368.02,1.35,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.121,0.860,35.01,0,0,0,N/A,N/A
+42,Fixed Low-Power (W0.50-E1-INT4),1400.00,1400.00,1401.38,1.38,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.124,0.860,35.01,0,0,0,N/A,N/A
+43,Fixed Low-Power (W0.50-E1-INT4),1433.33,1433.33,1434.63,1.29,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.116,0.860,35.01,0,0,0,N/A,N/A
+44,Fixed Low-Power (W0.50-E1-INT4),1466.67,1466.67,1467.87,1.20,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.108,0.860,35.01,0,0,0,N/A,N/A
+45,Fixed Low-Power (W0.50-E1-INT4),1500.00,1500.00,1501.18,1.18,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.106,0.860,35.01,0,0,0,N/A,N/A
+46,Fixed Low-Power (W0.50-E1-INT4),1533.33,1533.33,1534.45,1.12,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.101,0.860,35.01,0,0,0,N/A,N/A
+47,Fixed Low-Power (W0.50-E1-INT4),1566.67,1566.67,1567.78,1.11,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.100,0.860,35.01,0,0,0,N/A,N/A
+48,Fixed Low-Power (W0.50-E1-INT4),1600.00,1600.00,1601.12,1.12,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.100,0.860,35.01,0,0,0,N/A,N/A
+49,Fixed Low-Power (W0.50-E1-INT4),1633.33,1633.33,1634.47,1.14,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.102,0.860,35.01,0,0,0,N/A,N/A
+50,Fixed Low-Power (W0.50-E1-INT4),1666.67,1666.67,1667.88,1.21,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.109,0.860,35.01,0,0,0,N/A,N/A
+51,Fixed Low-Power (W0.50-E1-INT4),1700.00,1700.00,1701.27,1.27,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.114,0.860,35.01,0,0,0,N/A,N/A
+52,Fixed Low-Power (W0.50-E1-INT4),1733.33,1733.33,1734.62,1.29,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.116,0.860,35.01,0,0,0,N/A,N/A
+53,Fixed Low-Power (W0.50-E1-INT4),1766.67,1766.67,1768.00,1.33,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.120,0.860,35.01,0,0,0,N/A,N/A
+54,Fixed Low-Power (W0.50-E1-INT4),1800.00,1800.00,1801.37,1.37,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.123,0.860,35.01,0,0,0,N/A,N/A
+55,Fixed Low-Power (W0.50-E1-INT4),1833.33,1833.33,1834.72,1.39,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.125,0.860,35.01,0,0,0,N/A,N/A
+56,Fixed Low-Power (W0.50-E1-INT4),1866.67,1866.67,1868.17,1.50,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.135,0.860,35.01,0,0,0,N/A,N/A
+57,Fixed Low-Power (W0.50-E1-INT4),1900.00,1900.00,1901.45,1.45,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.130,0.860,35.01,0,0,0,N/A,N/A
+58,Fixed Low-Power (W0.50-E1-INT4),1933.33,1933.33,1934.74,1.41,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.127,0.860,35.01,0,0,0,N/A,N/A
+59,Fixed Low-Power (W0.50-E1-INT4),1966.67,1966.67,1968.11,1.44,False,W0.50-E1-INT4,FIXED,Static baseline configuration,0.00,0.00,0.00,0.129,0.860,35.01,0,0,0,N/A,N/A
+0,Rule-Based Baseline,0.00,0.00,4.53,4.53,False,W0.75-E2-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.207,0.940,35.00,0,0,0,N/A,N/A
+1,Rule-Based Baseline,33.33,33.83,36.56,3.23,False,W0.75-E3-INT4,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.312,0.910,35.00,0,0,0,N/A,N/A
+2,Rule-Based Baseline,66.67,67.17,72.18,5.52,False,W0.75-E3-INT8,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.315,0.950,35.00,0,0,0,N/A,N/A
+3,Rule-Based Baseline,100.00,100.50,103.98,3.98,False,W1.00-E1-INT4,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.255,0.920,35.00,0,0,0,N/A,N/A
+4,Rule-Based Baseline,133.33,133.83,141.10,7.76,False,W1.00-E1-INT8,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.378,0.950,35.00,0,0,0,N/A,N/A
+5,Rule-Based Baseline,166.67,167.17,171.58,4.91,False,W1.00-E2-INT4,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.365,0.930,35.00,0,0,0,N/A,N/A
+6,Rule-Based Baseline,200.00,200.50,208.25,8.25,False,W1.00-E2-INT8,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.452,0.960,35.00,0,0,0,N/A,N/A
+7,Rule-Based Baseline,233.33,233.83,238.06,4.73,False,W1.00-E3-INT4,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.468,0.940,35.00,0,0,0,N/A,N/A
+8,Rule-Based Baseline,266.67,267.17,274.54,7.87,False,W1.00-E3-INT8,RULE_BASED,Scaled up to improve quality under slack,0.00,0.00,0.50,0.513,0.970,35.00,0,0,0,N/A,N/A
+9,Rule-Based Baseline,300.00,300.00,307.30,7.30,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.488,0.970,35.00,0,0,0,N/A,N/A
+10,Rule-Based Baseline,333.33,333.33,340.98,7.65,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.512,0.970,35.00,0,0,0,N/A,N/A
+11,Rule-Based Baseline,366.67,366.67,374.62,7.95,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.532,0.970,35.00,0,0,0,N/A,N/A
+12,Rule-Based Baseline,400.00,400.00,408.50,8.50,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.568,0.970,35.00,0,0,0,N/A,N/A
+13,Rule-Based Baseline,433.33,433.33,442.06,8.73,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.584,0.970,35.00,0,0,0,N/A,N/A
+14,Rule-Based Baseline,466.67,466.67,475.62,8.96,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.599,0.970,35.00,0,0,0,N/A,N/A
+15,Rule-Based Baseline,500.00,500.00,512.26,12.26,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.820,0.970,35.00,0,0,0,N/A,N/A
+16,Rule-Based Baseline,533.33,533.33,545.65,12.32,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.824,0.970,35.00,0,0,0,N/A,N/A
+17,Rule-Based Baseline,566.67,566.67,579.28,12.61,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.844,0.970,35.00,0,0,0,N/A,N/A
+18,Rule-Based Baseline,600.00,600.00,612.17,12.17,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.814,0.970,35.00,0,0,0,N/A,N/A
+19,Rule-Based Baseline,633.33,633.33,646.70,13.37,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.894,0.970,35.00,0,0,0,N/A,N/A
+20,Rule-Based Baseline,666.67,666.67,680.60,13.93,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.932,0.970,35.00,0,0,0,N/A,N/A
+21,Rule-Based Baseline,700.00,700.00,714.06,14.06,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.941,0.970,35.00,0,0,0,N/A,N/A
+22,Rule-Based Baseline,733.33,733.33,748.23,14.90,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.997,0.970,35.00,0,0,0,N/A,N/A
+23,Rule-Based Baseline,766.67,766.67,781.74,15.07,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.008,0.970,35.00,0,0,0,N/A,N/A
+24,Rule-Based Baseline,800.00,800.00,815.36,15.36,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.027,0.970,35.00,0,0,0,N/A,N/A
+25,Rule-Based Baseline,833.33,833.33,847.92,14.59,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.976,0.970,35.00,0,0,0,N/A,N/A
+26,Rule-Based Baseline,866.67,866.67,880.96,14.29,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.956,0.970,35.00,0,0,0,N/A,N/A
+27,Rule-Based Baseline,900.00,900.00,914.15,14.15,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.947,0.970,35.00,0,0,0,N/A,N/A
+28,Rule-Based Baseline,933.33,933.33,947.03,13.70,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.916,0.970,35.00,0,0,0,N/A,N/A
+29,Rule-Based Baseline,966.67,966.67,979.94,13.27,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.888,0.970,35.00,0,0,0,N/A,N/A
+30,Rule-Based Baseline,1000.00,1000.00,1017.99,17.99,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.203,0.970,35.00,0,0,0,N/A,N/A
+31,Rule-Based Baseline,1033.33,1033.33,1051.11,17.78,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.189,0.970,35.00,0,0,0,N/A,N/A
+32,Rule-Based Baseline,1066.67,1066.67,1084.95,18.28,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.223,0.970,35.00,0,0,0,N/A,N/A
+33,Rule-Based Baseline,1100.00,1100.00,1117.55,17.55,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.174,0.970,35.00,0,0,0,N/A,N/A
+34,Rule-Based Baseline,1133.33,1133.33,1151.69,18.36,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.228,0.970,35.00,0,0,0,N/A,N/A
+35,Rule-Based Baseline,1166.67,1166.67,1184.26,17.59,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.177,0.970,35.00,0,0,0,N/A,N/A
+36,Rule-Based Baseline,1200.00,1200.00,1217.50,17.50,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.171,0.970,35.00,0,0,0,N/A,N/A
+37,Rule-Based Baseline,1233.33,1233.33,1251.23,17.90,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.198,0.970,35.01,0,0,0,N/A,N/A
+38,Rule-Based Baseline,1266.67,1266.67,1284.91,18.24,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.220,0.970,35.01,0,0,0,N/A,N/A
+39,Rule-Based Baseline,1300.00,1300.00,1318.31,18.31,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,1.225,0.970,35.01,0,0,0,N/A,N/A
+40,Rule-Based Baseline,1333.33,1333.33,1343.34,10.01,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.669,0.970,35.01,0,0,0,N/A,N/A
+41,Rule-Based Baseline,1366.67,1366.67,1376.43,9.76,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.653,0.970,35.01,0,0,0,N/A,N/A
+42,Rule-Based Baseline,1400.00,1400.00,1409.96,9.96,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.666,0.970,35.01,0,0,0,N/A,N/A
+43,Rule-Based Baseline,1433.33,1433.33,1442.69,9.35,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.626,0.970,35.01,0,0,0,N/A,N/A
+44,Rule-Based Baseline,1466.67,1466.67,1475.35,8.69,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.581,0.970,35.01,0,0,0,N/A,N/A
+45,Rule-Based Baseline,1500.00,1500.00,1508.57,8.57,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.573,0.970,35.01,0,0,0,N/A,N/A
+46,Rule-Based Baseline,1533.33,1533.33,1541.43,8.10,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.542,0.970,35.01,0,0,0,N/A,N/A
+47,Rule-Based Baseline,1566.67,1566.67,1574.71,8.04,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.538,0.970,35.01,0,0,0,N/A,N/A
+48,Rule-Based Baseline,1600.00,1600.00,1608.08,8.08,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.541,0.970,35.01,0,0,0,N/A,N/A
+49,Rule-Based Baseline,1633.33,1633.33,1641.56,8.23,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.550,0.970,35.01,0,0,0,N/A,N/A
+50,Rule-Based Baseline,1666.67,1666.67,1675.45,8.79,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.588,0.970,35.01,0,0,0,N/A,N/A
+51,Rule-Based Baseline,1700.00,1700.00,1709.18,9.18,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.614,0.970,35.01,0,0,0,N/A,N/A
+52,Rule-Based Baseline,1733.33,1733.33,1742.66,9.32,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.624,0.970,35.01,0,0,0,N/A,N/A
+53,Rule-Based Baseline,1766.67,1766.67,1776.32,9.65,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.646,0.970,35.01,0,0,0,N/A,N/A
+54,Rule-Based Baseline,1800.00,1800.00,1809.88,9.88,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.661,0.970,35.01,0,0,0,N/A,N/A
+55,Rule-Based Baseline,1833.33,1833.33,1843.40,10.07,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.673,0.970,35.01,0,0,0,N/A,N/A
+56,Rule-Based Baseline,1866.67,1866.67,1877.52,10.85,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.726,0.970,35.01,0,0,0,N/A,N/A
+57,Rule-Based Baseline,1900.00,1900.00,1910.47,10.47,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.701,0.970,35.01,0,0,0,N/A,N/A
+58,Rule-Based Baseline,1933.33,1933.33,1943.55,10.21,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.683,0.970,35.01,0,0,0,N/A,N/A
+59,Rule-Based Baseline,1966.67,1966.67,1977.08,10.41,False,W1.00-E3-INT8,RULE_BASED,Nominal operating point maintained,0.00,0.00,0.00,0.696,0.970,35.01,0,0,0,N/A,N/A

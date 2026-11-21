@@ -1,0 +1,35 @@
+{
+  "input_shape": [
+    1,
+    3,
+    384,
+    640
+  ],
+  "raw_prediction_shape": "1x84x5040",
+  "total_parameters_fused": 3151904,
+  "hook_conv2d_count": 64,
+  "hook_silu_count": 57,
+  "hook_dense_macs": 2623196160,
+  "hook_dense_flops_2x": 5246392320,
+  "thop_macs": 2623933440.0,
+  "thop_flops_2x": 5247866880.0,
+  "mac_hook_vs_thop_diff_pct": 0.0281,
+  "conv2d_output_activation_elements": 9078720,
+  "conv2d_output_activation_fp32_mb": 34.6326,
+  "weight_fp32_mb": 12.0236,
+  "weights_path": "results/milestone_b/weights/yolov8n.pt",
+  "weights_file_bytes": 6549796,
+  "weights_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+  "total_parameters_unfused": 3157200,
+  "total_modules_unfused": 225,
+  "total_modules_fused": 168,
+  "class_count": 80,
+  "silu_activation_check": {
+    "n_images_checked": 5,
+    "mean_exact_zero_fraction_silu": 2.4001536098310293e-08,
+    "max_exact_zero_fraction_silu": 1.2000768049155146e-07,
+    "mean_abs_lt_1e3_fraction_silu": 0.008732766897081412,
+    "min_abs_lt_1e3_fraction_silu": 0.0045041282642089096,
+    "max_abs_lt_1e3_fraction_silu": 0.010583957373271889
+  }
+}

@@ -1,0 +1,5 @@
+config_id,name,beam_width,mean_latency_ms,median_latency_ms,p95_latency_ms,p99_latency_ms,max_latency_ms,cold_start_latency_ms,selected_action,predicted_energy_mj,planned_sequence
+A_Baseline_BW128,"Original Python, Beam Width 128",128,32.659,32.137,38.644,45.339,49.013,40.248,W0.50-E1-INT4,0.131,W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4
+B_Baseline_BW32,"Original Python, Beam Width 32",32,9.044,8.837,10.372,11.982,13.781,8.779,W0.50-E1-INT4,0.131,W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4
+C_Optimized_BW128,"Optimized Python, Beam Width 128",128,17.077,16.864,19.747,24.031,24.274,17.089,W0.50-E1-INT4,0.131,W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4
+D_Optimized_BW32,"Optimized Python, Beam Width 32",32,5.028,4.972,6.163,7.331,8.083,5.214,W0.50-E1-INT4,0.131,W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4 -> W0.50-E1-INT4

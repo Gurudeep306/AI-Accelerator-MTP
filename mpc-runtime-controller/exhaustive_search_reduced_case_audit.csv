@@ -1,0 +1,4 @@
+case,total_possible_sequences,direct_evaluations,bb_evaluations,pruning_efficiency_pct,direct_score_mj,bb_score_mj,direct_optimal_action,bb_optimal_action,direct_time_ms,bb_time_ms,exact_score_match,exact_action_match,exact_seq_match,beam_32_matches_exhaustive,beam_128_matches_exhaustive
+4_actions_horizon_3,64,64,22,65.62,0.384,0.384,W0.50-E1-INT4,W0.50-E1-INT4,0.971,0.398,True,True,True,True,True
+6_actions_horizon_3,216,216,34,84.26,0.384,0.384,W0.50-E1-INT4,W0.50-E1-INT4,1.819,0.532,True,True,True,True,True
+6_actions_horizon_4,1296,1296,119,90.82,0.512,0.512,W0.50-E1-INT4,W0.50-E1-INT4,15.438,1.643,True,True,True,True,True

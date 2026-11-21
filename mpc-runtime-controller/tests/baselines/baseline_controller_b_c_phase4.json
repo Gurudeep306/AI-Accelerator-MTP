@@ -1,0 +1,1275 @@
+{
+  "schema_version": "1.0",
+  "capture_phase": "pre_phase_a",
+  "capture_note": "Captured from uploaded working tree before Phase A source edits. The uploaded Git working tree was already dirty; this artifact records the exact uploaded state, not the clean HEAD commit.",
+  "git_branch": "feature/optimized-mpc",
+  "git_head": "c3094a9933e7fceeb0b2c00369a14cc980ecd7b6",
+  "working_tree_dirty": true,
+  "dataset": {
+    "name": "nuScenes-v1.0-mini",
+    "scene": "scene-0061",
+    "split": "train",
+    "cam_front_keyframes": 39,
+    "frames_captured": 39
+  },
+  "configuration": {
+    "horizon": 5,
+    "beam_width": 32,
+    "deadline_ms": 33.33,
+    "power_cap_w": 8.0,
+    "quality_floor": 0.65,
+    "thermal_model": "disabled (uncalibrated)",
+    "action_count": 18
+  },
+  "performance_data": {
+    "file": "synthetic_calibrated_profiles.csv",
+    "status": "synthetic software-regression fixture only; not hardware evidence"
+  },
+  "condition_a": {
+    "controller_b": {
+      "path": "FramePreviewMPCPipeline on 39 real scene-0061 CAM_FRONT images; synthetic workload model and synthetic profiles",
+      "frames": [
+        {
+          "frame_id": 0,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6326382817595821,
+          "predicted_energy_mj": 0.14698862325292392,
+          "predicted_e2e_latency_ms": 1.6326382817595821
+        },
+        {
+          "frame_id": 1,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6697258367554662,
+          "predicted_energy_mj": 0.15033271342999602,
+          "predicted_e2e_latency_ms": 1.6697258367554662
+        },
+        {
+          "frame_id": 2,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6588665554230104,
+          "predicted_energy_mj": 0.14935355474539966,
+          "predicted_e2e_latency_ms": 1.6588665554230104
+        },
+        {
+          "frame_id": 3,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6856565282135854,
+          "predicted_energy_mj": 0.15176915765445603,
+          "predicted_e2e_latency_ms": 1.6856565282135854
+        },
+        {
+          "frame_id": 4,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6842864035246659,
+          "predicted_energy_mj": 0.15164561544370214,
+          "predicted_e2e_latency_ms": 1.6842864035246659
+        },
+        {
+          "frame_id": 5,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6766739689820565,
+          "predicted_energy_mj": 0.15095921405665522,
+          "predicted_e2e_latency_ms": 1.6766739689820565
+        },
+        {
+          "frame_id": 6,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6485745191395804,
+          "predicted_energy_mj": 0.148425547121403,
+          "predicted_e2e_latency_ms": 1.6485745191395804
+        },
+        {
+          "frame_id": 7,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6342398155947955,
+          "predicted_energy_mj": 0.1471330284477436,
+          "predicted_e2e_latency_ms": 1.6342398155947955
+        },
+        {
+          "frame_id": 8,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.621107650452079,
+          "predicted_energy_mj": 0.14594894588995846,
+          "predicted_e2e_latency_ms": 1.621107650452079
+        },
+        {
+          "frame_id": 9,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6335785994103276,
+          "predicted_energy_mj": 0.14707340868297028,
+          "predicted_e2e_latency_ms": 1.6335785994103276
+        },
+        {
+          "frame_id": 10,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6395369095984484,
+          "predicted_energy_mj": 0.14761065118739103,
+          "predicted_e2e_latency_ms": 1.6395369095984484
+        },
+        {
+          "frame_id": 11,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6422426285643845,
+          "predicted_energy_mj": 0.14785461797618704,
+          "predicted_e2e_latency_ms": 1.6422426285643845
+        },
+        {
+          "frame_id": 12,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6711180193665867,
+          "predicted_energy_mj": 0.15045824391205623,
+          "predicted_e2e_latency_ms": 1.6711180193665867
+        },
+        {
+          "frame_id": 13,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7202625693378926,
+          "predicted_energy_mj": 0.15488955468235024,
+          "predicted_e2e_latency_ms": 1.7202625693378926
+        },
+        {
+          "frame_id": 14,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7701556335849167,
+          "predicted_energy_mj": 0.15938842845437987,
+          "predicted_e2e_latency_ms": 1.7701556335849167
+        },
+        {
+          "frame_id": 15,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7935621755847126,
+          "predicted_energy_mj": 0.16149902517846285,
+          "predicted_e2e_latency_ms": 1.7935621755847126
+        },
+        {
+          "frame_id": 16,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7856968432557416,
+          "predicted_energy_mj": 0.16078979707309174,
+          "predicted_e2e_latency_ms": 1.7856968432557416
+        },
+        {
+          "frame_id": 17,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7733442896452511,
+          "predicted_energy_mj": 0.1596759527493797,
+          "predicted_e2e_latency_ms": 1.7733442896452511
+        },
+        {
+          "frame_id": 18,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7489787347108188,
+          "predicted_energy_mj": 0.15747889269891735,
+          "predicted_e2e_latency_ms": 1.7489787347108188
+        },
+        {
+          "frame_id": 19,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7151631516949937,
+          "predicted_energy_mj": 0.1544297423361239,
+          "predicted_e2e_latency_ms": 1.7151631516949937
+        },
+        {
+          "frame_id": 20,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7588290026947746,
+          "predicted_energy_mj": 0.15836709684952494,
+          "predicted_e2e_latency_ms": 1.7588290026947746
+        },
+        {
+          "frame_id": 21,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7253651911933967,
+          "predicted_energy_mj": 0.1553496566910605,
+          "predicted_e2e_latency_ms": 1.7253651911933967
+        },
+        {
+          "frame_id": 22,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.710796254269807,
+          "predicted_energy_mj": 0.15403598162721213,
+          "predicted_e2e_latency_ms": 1.710796254269807
+        },
+        {
+          "frame_id": 23,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.733369765146942,
+          "predicted_energy_mj": 0.15607142838372465,
+          "predicted_e2e_latency_ms": 1.733369765146942
+        },
+        {
+          "frame_id": 24,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.745674546057487,
+          "predicted_energy_mj": 0.15718095272461327,
+          "predicted_e2e_latency_ms": 1.745674546057487
+        },
+        {
+          "frame_id": 25,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.763381563349516,
+          "predicted_energy_mj": 0.15877760460285156,
+          "predicted_e2e_latency_ms": 1.763381563349516
+        },
+        {
+          "frame_id": 26,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.751472638144775,
+          "predicted_energy_mj": 0.15770376912710013,
+          "predicted_e2e_latency_ms": 1.751472638144775
+        },
+        {
+          "frame_id": 27,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.715777558886337,
+          "predicted_energy_mj": 0.1544851431348264,
+          "predicted_e2e_latency_ms": 1.715777558886337
+        },
+        {
+          "frame_id": 28,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.685157317838319,
+          "predicted_energy_mj": 0.15172414455208755,
+          "predicted_e2e_latency_ms": 1.685157317838319
+        },
+        {
+          "frame_id": 29,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6677093391400286,
+          "predicted_energy_mj": 0.15015088975566054,
+          "predicted_e2e_latency_ms": 1.6677093391400286
+        },
+        {
+          "frame_id": 30,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6742658711850265,
+          "predicted_energy_mj": 0.15074208001484393,
+          "predicted_e2e_latency_ms": 1.6742658711850265
+        },
+        {
+          "frame_id": 31,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6808273182752371,
+          "predicted_energy_mj": 0.1513337148728055,
+          "predicted_e2e_latency_ms": 1.6808273182752371
+        },
+        {
+          "frame_id": 32,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6871833895917647,
+          "predicted_energy_mj": 0.15190683266172114,
+          "predicted_e2e_latency_ms": 1.6871833895917647
+        },
+        {
+          "frame_id": 33,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.679349372446832,
+          "predicted_energy_mj": 0.15120045081371639,
+          "predicted_e2e_latency_ms": 1.679349372446832
+        },
+        {
+          "frame_id": 34,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.687811181409505,
+          "predicted_energy_mj": 0.15196343981480545,
+          "predicted_e2e_latency_ms": 1.687811181409505
+        },
+        {
+          "frame_id": 35,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7017954468735121,
+          "predicted_energy_mj": 0.15322438560996943,
+          "predicted_e2e_latency_ms": 1.7017954468735121
+        },
+        {
+          "frame_id": 36,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.7019575071458428,
+          "predicted_energy_mj": 0.15323899844113587,
+          "predicted_e2e_latency_ms": 1.7019575071458428
+        },
+        {
+          "frame_id": 37,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.6940344271553696,
+          "predicted_energy_mj": 0.15252458227439766,
+          "predicted_e2e_latency_ms": 1.6940344271553696
+        },
+        {
+          "frame_id": 38,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.702665309945163,
+          "predicted_energy_mj": 0.15330282040170368,
+          "predicted_e2e_latency_ms": 1.702665309945163
+        }
+      ]
+    },
+    "controller_c": {
+      "path": "WithinFrameAdaptiveMPC on 39 frame IDs; first-layer MAC-ratio estimator (4.016M/105.42M) and synthetic profiles",
+      "frames": [
+        {
+          "frame_id": 0,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 1,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 2,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 3,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 4,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 5,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 6,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 7,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 8,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 9,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 10,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 11,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 12,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 13,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 14,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 15,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 16,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 17,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 18,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 19,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 20,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 21,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 22,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 23,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 24,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 25,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 26,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 27,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 28,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 29,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 30,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 31,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 32,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 33,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 34,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 35,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 36,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 37,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        },
+        {
+          "frame_id": 38,
+          "action": "W0.50-E1-INT4",
+          "mode": "MPC",
+          "planned_sequence": [
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4",
+            "W0.50-E1-INT4"
+          ],
+          "predicted_latency_ms": 1.3659047619047622,
+          "predicted_energy_mj": 0.12312380952380952,
+          "predicted_e2e_latency_ms": 1.3659047619047622,
+          "feasible_actions": 18
+        }
+      ]
+    }
+  },
+  "condition_b": {
+    "controller_b": {
+      "path": "FramePreviewMPCPipeline; forecaster forecast patched for this test to [1.0,1.0,25.0,25.0] to create a future-step spike; image preview remains real",
+      "workload_forecast": [
+        1.0,
+        1.0,
+        25.0,
+        25.0
+      ],
+      "mode": "SAFETY_FALLBACK",
+      "action": "W0.50-E1-INT4",
+      "planned_sequence": [],
+      "reason": "No fully feasible predicted sequence across the complete horizon (e2e_latency (107.3ms > 33.3ms); e2e_latency (107.8ms > 33.3ms); e2e_latency (119.3ms > 33.3ms); e2e_latency (126.0ms > 33.3ms); e2e_latency (140.5ms > 33.3ms); e2e_latency (148.3ms > 33.3ms); e2e_latency (194.0ms > 33.3ms); e2e_latency (236.3ms > 33.3ms); e2e_latency (249.6ms > 33.3ms); e2e_latency (35.5ms > 33.3ms); e2e_latency (36.0ms > 33.3ms); e2e_latency (40.3ms > 33.3ms); e2e_latency (40.8ms > 33.3ms); e2e_latency (42.5ms > 33.3ms); e2e_latency (54.5ms > 33.3ms); e2e_latency (55.0ms > 33.3ms); e2e_latency (69.5ms > 33.3ms); e2e_latency (70.0ms > 33.3ms); e2e_latency (71.5ms > 33.3ms); e2e_latency (75.3ms > 33.3ms); e2e_latency (78.5ms > 33.3ms); e2e_latency (79.0ms > 33.3ms); e2e_latency (82.5ms > 33.3ms); e2e_latency (98.0ms > 33.3ms)); validated safe fallback 'W0.50-E1-INT4' selected."
+    },
+    "shared_mpc_core": {
+      "path": "MPCController direct fixture with workload_now=1.0 and forecast [1.0,1.0,25.0,25.0]",
+      "mode": "SAFETY_FALLBACK",
+      "action": "W0.50-E1-INT4",
+      "planned_sequence": [],
+      "reason": "No fully feasible predicted sequence across the complete horizon (e2e_latency (107.2ms > 33.3ms); e2e_latency (107.8ms > 33.3ms); e2e_latency (119.2ms > 33.3ms); e2e_latency (126.0ms > 33.3ms); e2e_latency (140.5ms > 33.3ms); e2e_latency (148.2ms > 33.3ms); e2e_latency (194.0ms > 33.3ms); e2e_latency (236.3ms > 33.3ms); e2e_latency (249.5ms > 33.3ms); e2e_latency (35.5ms > 33.3ms); e2e_latency (36.0ms > 33.3ms); e2e_latency (40.2ms > 33.3ms); e2e_latency (40.8ms > 33.3ms); e2e_latency (42.5ms > 33.3ms); e2e_latency (54.5ms > 33.3ms); e2e_latency (55.0ms > 33.3ms); e2e_latency (69.5ms > 33.3ms); e2e_latency (70.0ms > 33.3ms); e2e_latency (71.5ms > 33.3ms); e2e_latency (75.2ms > 33.3ms); e2e_latency (78.5ms > 33.3ms); e2e_latency (79.0ms > 33.3ms); e2e_latency (82.5ms > 33.3ms); e2e_latency (98.0ms > 33.3ms)); validated safe fallback 'W0.50-E1-INT4' selected."
+    },
+    "controller_c": {
+      "status": "NOT_APPLICABLE",
+      "reason": "Controller C repeats the current frame's remaining-workload estimate across its horizon and cannot express an inter-frame future workload spike through its public adapter."
+    }
+  }
+}

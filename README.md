@@ -16,6 +16,13 @@ Cycle-accurate mapping of an anytime object detector onto a 4×4 INT8/INT4 systo
 - **Paper:** [`Model-Mapping-and-Execution.pdf`](Model-Mapping-and-Execution.pdf)
 - **Code, inputs and simulation outputs:** [`model-mapping-and-execution/`](model-mapping-and-execution/) — start with [`START-HERE.md`](model-mapping-and-execution/START-HERE.md)
 
+## Predictive runtime controller (MPC)
+
+Multi-timescale model-predictive control of the accelerator: inter-frame preview MPC and intra-frame MPC with beam search, a discrete-event replay harness, and workload traces from YOLOv8n on nuScenes camera frames.
+
+- **Report:** to be added
+- **Code, traces and results:** [`mpc-runtime-controller/`](mpc-runtime-controller/)
+
 ## Reconfigurable AI accelerator: RTL design and verification
 
 Descriptor-driven single-tile 4×4 systolic accelerator in Verilog with packed INT8/INT4 arithmetic, self-checking testbenches and simulation waveforms.
